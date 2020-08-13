@@ -1,4 +1,4 @@
-# Session ID - Session Title
+# DAT160 - Cloud Native Development with SAP HANA
 
 ## Description
 
