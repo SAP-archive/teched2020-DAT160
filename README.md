@@ -31,7 +31,7 @@ Start the exercises [here](exercises/myPDFDoc.pdf).
     
 **OR** Link to the Tutorial Navigator for example...
 
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
+Start the exercises [here](https://developers.sap.com/tutorials/...).
 
 **IMPORTANT**
 
