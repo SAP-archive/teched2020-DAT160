@@ -27,7 +27,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 
 **OR** Link to the PDF document stored in your github repo for example...
 
-Start the exercises [here](exercises/myPDFDoc.pdf).
+Start the exercises [here](exercises/DAT160_Exercises.pdf).
     
 **OR** Link to the Tutorial Navigator for example...
 
