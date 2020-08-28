@@ -31,7 +31,7 @@ Start the exercises [here](exercises/DAT160_Exercises.pdf).
     
 **OR** Link to the Tutorial Navigator for example...
 
-Start the exercises [here](https://developers.sap.com/tutorials/...).
+Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
 
 **IMPORTANT**
 
