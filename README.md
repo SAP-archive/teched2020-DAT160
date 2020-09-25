@@ -35,7 +35,7 @@ Start the exercises [here](https://developers.sap.com/tutorials/abap-environment
 
 **IMPORTANT**
 
-Your repo must contain the .resuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
+Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
 
 ## How to obtain support
 
