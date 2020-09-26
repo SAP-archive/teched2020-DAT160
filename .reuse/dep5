@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: teched2020-DAT160
-Upstream-Contact: <insert contact name> (<insert_contact_email>)
+Upstream-Contact: Thomas Jung (thomas.jung@sap.com)
 Source: https://github.com/sap-samples/teched2020-DAT160
 Disclaimer: The code in this project may include calls to APIs (“API Calls”) of
  SAP or third-party products or services developed outside of this project
