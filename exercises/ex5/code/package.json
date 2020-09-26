@@ -1,0 +1,39 @@
+{
+    "name": "dat160",
+    "version": "1.0.0",
+    "description": "A simple CAP project.",
+    "repository": "<Add your repository here>",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "@sap/cds": "^4",
+        "express": "^4",
+        "@sap/hana-client": "^2.5",
+        "@sap/cds-odata-v2-adapter-proxy": "^1.4",
+        "@sap/hdbext": "^7.0.0",
+        "sap-hdbext-promisfied": "^2.202008.1"
+    },
+    "devDependencies": {
+        "sqlite3": "^4"
+    },
+    "scripts": {
+        "hana": "cds deploy --to hana:dat160 --auto-undeploy",
+        "start": "cds run",
+        "build": "cds build/all --clean"
+    },
+    "cds": {
+        "preview": {
+            "ui5": {
+                "version": "1.80.2"
+            }
+        },
+        "hana": {
+            "deploy-format": "hdbtable"
+        },
+        "requires": {
+            "db": {
+                "kind": "hana"
+            }
+        }
+    }
+}

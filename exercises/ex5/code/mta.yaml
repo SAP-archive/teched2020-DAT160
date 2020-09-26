@@ -1,0 +1,31 @@
+## Generated mta.yaml based on template version 0.3.0
+## appName = dat160
+## language=nodejs; multiTenant=false
+## approuter=
+_schema-version: '3.1'
+ID: dat160
+version: 1.0.0
+description: "A simple CAP project."
+parameters:
+  enable-parallel-deployments: true
+   
+build-parameters:
+  before-all:
+   - builder: custom
+     commands:
+      - npm install --production
+      - npx -p @sap/cds-dk cds build --production
+
+modules:
+ # --------------------- SERVER MODULE ------------------------
+ - name: dat160-srv
+ # ------------------------------------------------------------
+   type: nodejs
+   path: gen/srv
+   provides:
+    - name: srv-api      # required by consumers of CAP services (e.g. approuter)
+      properties:
+        srv-url: ${default-url}
+
+
+

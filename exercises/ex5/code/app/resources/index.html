@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>TechEd DAT160</title>
+	<script>
+		window["sap-ushell-config"] = {
+			defaultRenderer: "fiori2",			
+			applications: {				
+				
+				"odata-v4": {
+					title: "Currencies",
+					description: "Currencies in OData V4",
+					applicationType : "URL",
+					url: "/catalog/Currencies"
+				},				
+				"odata-v2": {
+					title: "Currencies V2",
+					description: "Currencies in OData V2",
+					applicationType : "URL",
+					url: "/v2/catalog/Currencies"
+                },
+				"po-fiori-preview": {
+					title: "POs Preview",
+					description: "POs using Fiori Preview",
+					applicationType : "URL",
+					url: "/$fiori-preview/CatalogService/POHeaders#preview-app"
+                },
+                "po-fiori": {
+					title: "Purchase Orders Fiori Example",
+					description: "Purchase Orders Fiori Example",
+					additionalInformation: "SAPUI5.Component=sap.teched.pofiori",					
+                    applicationType : "URL",
+					url: "/resources/pofiori/webapp",
+					navigationMode: "embedded"
+				},	  
+			}
+		};
+	</script>
+
+	<script src="https://sapui5.hana.ondemand.com/test-resources/sap/ushell/bootstrap/sandbox.js"></script>
+	<script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+    	data-sap-ui-libs="sap.m, sap.ushell, sap.collaboration, sap.ui.layout"
+    	data-sap-ui-compatVersion="edge"
+    	data-sap-ui-theme="sap_fiori_3_dark"
+    	data-sap-ui-frameOptions="allow"
+	></script>
+	<script>
+		sap.ui.getCore().attachInit(()=> sap.ushell.Container.createRenderer().placeAt("content"))
+	</script>
+
+</head>
+<body class="sapUiBody" id="content"></body>
+</html>

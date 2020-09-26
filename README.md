@@ -43,7 +43,7 @@ Learn the basics of developing with SAP HANA Cloud combined with other cloud nat
   * [Exercise 4.2 - Setup a Fiori Launchpad Sandbox](exercises/ex4#exercise-42-setup-a-fiori-launchpad-sandbox)
   * [Exercise 4.3 - Generate a Fiori Application](exercises/ex4#exercise-43-generate-a-fiori-application) 
 * [Exercise 5 - Function Implemented as Stored Procedure](exercises/ex5/)
-  * [Exercise 4.1 - Cleanup and Preparations for New Data Model](exercises/ex2#exercise-31-cleanup-and-preparations-fo-new-data-model)* 
+  * [Exercise 5.1 - Add Stored Procedure and Use it to Implement a CAP Function](exercises/ex5#exercise-51-add-stored-procedure-and-use-it-to-implement-a-cap-function) 
   
 ## How to obtain support
 
