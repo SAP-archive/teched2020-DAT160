@@ -107,5 +107,5 @@ npm install -g hana-cli
 
 You've now ...
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Exercise 2 - Building the Data Model](../ex2/README.md)
 

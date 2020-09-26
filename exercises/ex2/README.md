@@ -1,4 +1,4 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 2 - Building the Data Model
 
 In this exercise, we will create...
 
