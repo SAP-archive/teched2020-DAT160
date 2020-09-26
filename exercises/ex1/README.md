@@ -24,7 +24,7 @@ After completing these steps you will have...
 
 2. cds section of package.json add hana.deploy-format
 
-```JSON
+```json
 "cds": {
         "hana": {
             "deploy-format": "hdbtable"
@@ -39,7 +39,7 @@ After completing these steps you will have...
 
 3. scripts section
 
-```JSON
+```json
     "scripts": {
         "hana": "cds deploy --to hana:dat160 --auto-undeploy",
         "start": "cds run",
@@ -47,6 +47,61 @@ After completing these steps you will have...
     },
 ```
 
+4. Complete package.json</br>![Complete package.json](images/complete_package_json.png)
+
+5. New terminal</br>![New Terminal](images/new_terminal.png)
+
+6. npm install
+
+```shell
+npm install
+```
+
+![npm install](images/npm_install.png)
+
+## Exercise 1.3 Build Sample Project Into HANA
+
+After completing these steps you will have created...
+
+1. Run build command
+
+```shell
+npm run build
+```
+
+2. What build did</br>![CDS Build Results](images/cds_build.png)
+
+3. gen folder</br>![Build Creates gen Folder](images/gen_folder.png)
+
+4. Run deploy to
+
+```shell
+npm run hana
+```
+
+5. Results of deploy to</br>![Results of HANA Deployment](images/hana_deploy_results.png)
+
+6. Install hana-cli
+
+```shell
+npm install -g hana-cli
+```
+
+![Install hana-cli](images/install_hana_cli.png)
+
+7. hana-cli uses default-env.json created by the cds deploy to command. Can use that to connect to the HANA DB </br>![hana-cli systemInfo](images/hana_cli_systemInfo.png)
+
+8. Or to the specific HDI container that was created for the CAP project</br>![hana-cli tables](images/hana_cli_tables.png)
+
+9. Open Database Explorer</br>![Open Database Explorer](images/open_db_explorer.png)
+
+10. Database Explorer initially empty</br>![Initial DB Explorer](images/initial_db_explorer.png)
+
+11. Add Database</br>![Add Database](images/dbexplorer_add_database.png)
+
+12. One sample table</br>![DB Explorer Tables](images/dbexplorer_tables.png)
+
+13. View Data</br>![DB Explorer View Data](images/dbexplorer_view_data.png)
 
 ## Summary
 
