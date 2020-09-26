@@ -1,5 +1,5 @@
 
-# Exercise 3 - Service Layer
+# Exercise 4 - Service Layer
 
 In this exercise, we will create...
 
@@ -40,4 +40,4 @@ READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
 
 You've now ...
 
-Continue to - [Exercise 4 - Excercise 4 ](../ex4/README.md)
+Continue to - [Exercise 5 - Excercise 5 ](../ex5/README.md)

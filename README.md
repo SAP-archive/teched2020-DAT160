@@ -31,8 +31,13 @@ Learn the basics of developing with SAP HANA Cloud combined with other cloud nat
   * [Exercise 1.2 - Adjust package.json](exercises/ex1#exercise-12-adjust-packagejson)
   * [Exercise 1.3 - Build Sample Project Into HANA](exercises/ex1#exercise-13-build-sample-project-into-hana) 
 * [Exercise 2 - Building the Data Model](exercises/ex2/)
-  * [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-  * [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
+  * [Exercise 2.1 - Cleanup and Preparations for New Data Model](exercises/ex2#exercise-21-cleanup-and-preparations-fo-new-data-model)
+  * [Exercise 2.2 - Create Data Model](exercises/ex2#exercise-22-create-data-model)
+  * [Exercise 2.3 - Load Initial Data From CSV](exercises/ex2#exercise-23-load-initial-data-from-csv)
+* [Exercise 3 - Service Layer](exercises/ex3/)
+  * [Exercise 3.1 - Cleanup and Preparations for New Data Model](exercises/ex2#exercise-31-cleanup-and-preparations-fo-new-data-model)
+  * [Exercise 3.2 - Create Data Model](exercises/ex2#exercise-22-create-data-model)
+  * [Exercise 3.3 - Load Initial Data From CSV](exercises/ex2#exercise-23-load-initial-data-from-csv) 
 
 ## How to obtain support
 
