@@ -35,10 +35,12 @@ Learn the basics of developing with SAP HANA Cloud combined with other cloud nat
   * [Exercise 2.2 - Create Data Model](exercises/ex2#exercise-22-create-data-model)
   * [Exercise 2.3 - Load Initial Data From CSV](exercises/ex2#exercise-23-load-initial-data-from-csv)
 * [Exercise 3 - Service Layer](exercises/ex3/)
-  * [Exercise 3.1 - Cleanup and Preparations for New Data Model](exercises/ex2#exercise-31-cleanup-and-preparations-fo-new-data-model)
-  * [Exercise 3.2 - Create Data Model](exercises/ex2#exercise-22-create-data-model)
-  * [Exercise 3.3 - Load Initial Data From CSV](exercises/ex2#exercise-23-load-initial-data-from-csv) 
-
+  * [Exercise 3.1 - Create Service](exercises/ex3#exercise-31-create-service)
+  * [Exercise 3.2 - Add OData V2 Support](exercises/ex3#exercise-32-add-odata-v2-support)
+  * [Exercise 3.3 - Custom Handlers](exercises/ex3#exercise-33-custom-handlers)
+* [Exercise 4 - User Interface](exercises/ex4/)
+  * [Exercise 4.1 - Cleanup and Preparations for New Data Model](exercises/ex2#exercise-31-cleanup-and-preparations-fo-new-data-model)
+  
 ## How to obtain support
 
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.

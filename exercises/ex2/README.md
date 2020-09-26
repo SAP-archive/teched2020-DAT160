@@ -445,7 +445,7 @@ GBP;fr;livre sterling;pound sterling
 ILS;fr;Shekel;shekel israelien
 ```
 
-4. Add PO Headers /db/data/teched.PurchaseOrder-Headers.csv - lots of data, copy from [teched.PurchaseOrder-Headers.csv](code/db/data/teched.PurchaseOrder-Headers.csv)
+4. Add PO Headers /db/data/teched.PurchaseOrder-Headers.csv - lots of data, copy from [teched.PurchaseOrder-Headers.csv](code/db/data/teched.PurchaseOrder-Headers.csv) but switch to Raw ![Switch to Raw](images/switch_to_raw.png)
 
 5. Add PO Items /db/data/teched.PurchaseOrder-Items.csv - lots of data, copy from [teched.PurchaseOrder-Items.csv](code/db/data/teched.PurchaseOrder-teched.PurchaseOrder-Items.csv)
 
