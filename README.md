@@ -39,7 +39,11 @@ Learn the basics of developing with SAP HANA Cloud combined with other cloud nat
   * [Exercise 3.2 - Add OData V2 Support](exercises/ex3#exercise-32-add-odata-v2-support)
   * [Exercise 3.3 - Custom Handlers](exercises/ex3#exercise-33-custom-handlers)
 * [Exercise 4 - User Interface](exercises/ex4/)
-  * [Exercise 4.1 - Cleanup and Preparations for New Data Model](exercises/ex2#exercise-31-cleanup-and-preparations-fo-new-data-model)
+  * [Exercise 4.1 - Add Fiori Annotations](exercises/ex4#exercise-41-add-fiori-annotations)
+  * [Exercise 4.2 - Setup a Fiori Launchpad Sandbox](exercises/ex4#exercise-42-setup-a-fiori-launchpad-sandbox)
+  * [Exercise 4.3 - Generate a Fiori Application](exercises/ex4#exercise-43-generate-a-fiori-application) 
+* [Exercise 5 - Function Implemented as Stored Procedure](exercises/ex5/)
+  * [Exercise 4.1 - Cleanup and Preparations for New Data Model](exercises/ex2#exercise-31-cleanup-and-preparations-fo-new-data-model)* 
   
 ## How to obtain support
 
