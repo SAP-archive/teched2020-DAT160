@@ -1,6 +1,6 @@
 # Exercise 1 - Create CAP Project
 
-[![code](https://flat.badgen.net/badge/code/available/green?icon=github)](/code/)
+[![code](https://flat.badgen.net/badge/code/available/green?icon=github)](./code/)
 
 In this exercise, we will create...
 
