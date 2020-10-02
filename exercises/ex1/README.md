@@ -1,5 +1,7 @@
 # Exercise 1 - Create CAP Project
 
+[![code](https://flat.badgen.net/badge/code/available/green?icon=github)](/code/)
+
 In this exercise, we will create...
 
 ## Exercise 1.1 Create Project From Template

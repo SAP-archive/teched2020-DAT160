@@ -1,12 +1,12 @@
 # Getting Started
 
-In this exercise, you will perform the basic setup to get a CAP project created and ready for further development.
+In this exercise, you will perform the basic setup to get a SAP Cloud Application Programming Model (CAP) project created and ready for further development.
 
 ## Is HANA running?
 
 In the trial landscape the HANA instance stops each night. Therefore the first thing we need to do is make sure your HANA instance is running.
 
-1. From the SAP Cloud Platform entry page, click Subaccounts and then the tile for your Subaccount named trial
+1. From the SAP Cloud Platform entry page, click **Subaccounts** and then the tile for your Subaccount named **trial**
 </br>![Subaccount](/exercises/ex0/images/subaccount.png)
 
 2. In the left side menu choose SAP HANA Cloud. You should see your instance details displayed. If not, please return to the [Requirements](../../README.md#Requirements) and follow the steps for "Create an instance of the SAP HANA Cloud in your trial account"</br>![HANA Cloud Instance](images/3_2.png)
