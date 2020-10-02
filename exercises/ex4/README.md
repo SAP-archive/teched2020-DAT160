@@ -1,5 +1,6 @@
-
 # Exercise 4 - User Interface
+
+[![code](https://flat.badgen.net/badge/code/available/green?icon=github)](./code/)
 
 In this exercise, we will create...
 

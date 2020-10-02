@@ -1,5 +1,6 @@
-
 # Exercise 3 - Service Layer
+
+[![code](https://flat.badgen.net/badge/code/available/green?icon=github)](./code/)
 
 In this exercise, we will create...
 

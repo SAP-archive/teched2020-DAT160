@@ -1,5 +1,7 @@
 # Exercise 2 - Building the Data Model
 
+[![code](https://flat.badgen.net/badge/code/available/green?icon=github)](./code/)
+
 In this exercise, we will create...
 
 ## Exercise 2.1 Cleanup and Preparations for New Data Model

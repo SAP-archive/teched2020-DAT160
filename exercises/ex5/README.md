@@ -1,5 +1,6 @@
-
 # Exercise 5 - Function Implemented as Stored Procedure
+
+[![code](https://flat.badgen.net/badge/code/available/green?icon=github)](./code/)
 
 In this exercise, we will create...
 
