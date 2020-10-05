@@ -2,11 +2,11 @@
 
 [![code](https://flat.badgen.net/badge/code/available/green?icon=github)](./code/)
 
-In this exercise, we will create a service function which is implmented via a HANA SQLScript Stored Procedure.
+In this exercise, we will create a service function which is implemented via a HANA SQLScript Stored Procedure.
 
 ## Exercise 5.1 Add Stored Procedure and Use it to Implement a CAP Function
 
-1. In the **/db/src** folder create a new file named **sleep.hdbprocedure**. This is a very simple HANA Stored Procedure that calls the built-in SYNC library to put processing to sleep for 10 seconds. Its a nice tool to be able to test the impact of long running queries without actually putting unnecessary load on the system. </br>![sleep](images/sleep_procedure.png)
+1. In the **/db/src** folder create a new file named **sleep.hdbprocedure**. This is a very simple HANA Stored Procedure that calls the built-in SYNC library to put processing to sleep for 10 seconds. It's a nice tool to be able to test the impact of long running queries without actually putting unnecessary load on the system. </br>![sleep](images/sleep_procedure.png)
 
 ```SQL
 PROCEDURE "sleep" ( )
@@ -26,7 +26,7 @@ END
 
 4. If you wish you can return to the Database Explorer. This new Procedure is there now and can be tested. <br>![View sleep in DB Explorer](images/test_sleep1.png)</br></br>![Test Run sleep](images/test_sleep2.png)
 
-5. But now we want to to add this Procedure to the CAP service as a function.  Edit **/srv/cat-service.cds**. </br>Add: ```function sleep() returns Boolean;``` to the service defintion. This will expose an OData Function as part of the service interface. </br>![Add Function](images/add_function.png)
+5. But now we want to add this Procedure to the CAP service as a function.  Edit **/srv/cat-service.cds**. </br>Add: ```function sleep() returns Boolean;``` to the service definition. This will expose an OData Function as part of the service interface. </br>![Add Function](images/add_function.png)
 
 6. Just adding the function doesn't do anything.  We need to use the service handler exit in **cat-service.js** again to implement the call to the Stored Procedure.  This logic will implement the exit handler for this function which in turn uses the standard @sap/hdbext module to call the Stored Procedure from HANA. </br>![Call Stored Procedure](images/call_stored_procedure.png)
 

@@ -8,9 +8,9 @@ In this exercise, we will create a Purchase Order header and item table using Co
 
 After completing these steps you will have removed the sample data model and prepared your project with translatable texts.
 
-1. Navigate to the **cat-service.cds** in the **/srv** folder and open it for editing. Comment out the using line and the entity. This removes references to the sample content and allows us to begin developing our own data model and build without receiving errors at the service defintion layer.</br>![Remove Service Entity](images/remove_service_entity.png)
+1. Navigate to the **cat-service.cds** in the **/srv** folder and open it for editing. Comment out the using line and the entity. This removes references to the sample content and allows us to begin developing our own data model and build without receiving errors at the service definition layer.</br>![Remove Service Entity](images/remove_service_entity.png)
 
-2. Also delete the saample csv from the **/db/data** folder. Its not going to be needed any longer.</br>![Delete Sample CSV](images/delete_sample_csv.png)
+2. Also delete the sample csv from the **/db/data** folder. It's not going to be needed any longer.</br>![Delete Sample CSV](images/delete_sample_csv.png)
 
 3. We want to avoid hard coding text strings in our data definition or service layers.  CAP allows us to use translatable text strings by externalizing them in a [i18n file](https://en.wikipedia.org/wiki/Internationalization_and_localization). Add **_i18n/i18n.properties** file into your project as shown. </br>![New File](images/new_file.png)</br></br>![New i18n.properties](images/new_i18n.png)</br>Notice how we are able to create both folders and files from the single **New File** dialog.
 
@@ -122,7 +122,7 @@ productImage=Product Image
 productImageType=Product Image Typ
 ```
 
-5. Navigate to the **data-model.cds** in the **/db** folder and open it for editingd. Clear all of the sample content from this file</br>![Delete Data Model](images/delete_data_model.png)
+5. Navigate to the **data-model.cds** in the **/db** folder and open it for editing. Clear all of the sample content from this file</br>![Delete Data Model](images/delete_data_model.png)
 
 ## Exercise 2.2 Create Data Model
 
@@ -130,7 +130,7 @@ After completing these steps you will have created a Purchase Order header and i
 
 1. Return to the **/db/data-model.cds** file. This is where we will build our complete application data model
 
-2. We start with a **using** block. This is how we import existing types and other resuable parts from other **cds** files, including from SAP standard delivered ones. Here were using the @sap/cds/common which contains valuable enterprise reuse concepts like currency conversion, generated GUID keys, etc.  This module is stored in the public npm repostory as part of the @sap/cds module and needs no special configuration to load or reuse it.
+2. We start with a **using** block. This is how we import existing types and other reusable parts from other **cds** files, including from SAP standard delivered ones. Here were using the @sap/cds/common which contains valuable enterprise reuse concepts like currency conversion, generated GUID keys, etc.  This module is stored in the public npm repository as part of the @sap/cds module and needs no special configuration to load or reuse it.
 
 ```cds
 using {
@@ -141,7 +141,7 @@ using {
 } from '@sap/cds/common';
 ```
 
-3. Using CAP we can also extend and enhance SAP delivered models as well. In the previous step we imported the **Currency** entity.  But now we can extend the defintion of that entity and add three of our own columns to it.
+3. Using CAP we can also extend and enhance SAP delivered models as well. In the previous step we imported the **Currency** entity.  But now we can extend the definition of that entity and add three of our own columns to it.
 
 ```cds
 extend sap.common.Currencies with {
@@ -151,7 +151,7 @@ extend sap.common.Currencies with {
 }
 ```
 
-4. Next we want to begin defining our own data model  We will wrap all of our own content in a context. To prefix the names of all subsequent definitions, place a namespace directive at the top of a model. This is comparable to other languages, like Java.  However here we will use a context which is esentially a namespace that can be nested within another section.
+4. Next we want to begin defining our own data model  We will wrap all of our own content in a context. To prefix the names of all subsequent definitions, place a namespace directive at the top of a model. This is comparable to other languages, like Java.  However here we will use a context which is essentially a namespace that can be nested within another section.
 
 ```cds
 context teched.common {
@@ -204,7 +204,7 @@ context teched.common {
     }
 ```
 
-8. Similiar to our Amount abstract entity, let's also add a similiar one for Quantity and Quantity Unit.
+8. Similar to our Amount abstract entity, let's also add a another one for Quantity and Quantity Unit.
 
 ```cds
     type QuantityT : Decimal(13, 3)@(title : '{i18n>quantity}');
@@ -216,7 +216,7 @@ context teched.common {
     }
 ```
 
-9. Entities are structured types with named and typed elements, representing sets of (persisted) data that can be read and manipulated using usual CRUD operations. They usually contain one or more designated primary key elements. Here we have the entity for our Purchase Order Headers table.  We also switch to a new context to separate the tranasactional table from our earlier reusable types and abstract entities. </br>This example also uses Compositions to the Item entity we will create momentarily. Compositions constitute document structures through ‘contained-in’ relationships. They frequently show up in to-many header-child scenarios. ssentially Compositions are the same as associations, just with the additional information that this association represents a contained-in relationship so the same syntax and rules apply in their base form.
+9. Entities are structured types with named and typed elements, representing sets of (persisted) data that can be read and manipulated using usual CRUD operations. They usually contain one or more designated primary key elements. Here we have the entity for our Purchase Order Headers table.  We also switch to a new context to separate the transactional table from our earlier reusable types and abstract entities. </br>This example also uses Compositions to the Item entity we will create momentarily. Compositions constitute document structures through ‘contained-in’ relationships. They frequently show up in to-many header-child scenarios. Essentially Compositions are the same as associations, just with the additional information that this association represents a contained-in relationship so the same syntax and rules apply in their base form.
 
 ```cds
 context teched.PurchaseOrder {
@@ -328,7 +328,7 @@ context teched.PurchaseOrder {
 }
 ```
 
-12. Annotations allow us to add metadata and other features not directly defined in the main CDS syntax to our data model. For example Annotations might be used to add text descriptions to a data model.  They are also heavily used in describing the user interface without getting into UI technology specifics.</br>Annotations are inherited from types and base types to derived types, entities, and elements as well as from elements of underlying entities in case of views. Although we could have defined the annotations directly in the entity definitions, a common best practice is separate the annotations from the entity defintion for better maintenance. In fact we will create a separater file in our project for our annotations.</br> Create a new file in the **/db** folder named **po-annotations.cds**. Use the following coding for this file.
+12. Annotations allow us to add metadata and other features not directly defined in the main CDS syntax to our data model. For example Annotations might be used to add text descriptions to a data model.  They are also heavily used in describing the user interface without getting into UI technology specifics.</br>Annotations are inherited from types and base types to derived types, entities, and elements as well as from elements of underlying entities in case of views. Although we could have defined the annotations directly in the entity definitions, a common best practice is separate the annotations from the entity definition for better maintenance. In fact we will create a separate file in our project for our annotations.</br> Create a new file in the **/db** folder named **po-annotations.cds**. Use the following coding for this file.
 
 ```cds
 using teched.PurchaseOrder as PO from './data-model';
@@ -403,7 +403,7 @@ annotate Items with {
 }
 ```
 
-13. Build the new data model using the ```npm run build``` command from the Terminal. This will compile these CDS definitions into HANA specific development artifacts.  Now deploy these new definitions into the SAP HANA Cloud database using the command ```npm run hana``` from the termainl. Your output should look like the following:</br>![Sucessful Deployment](images/cds_build_initial_data_model.png)
+13. Build the new data model using the ```npm run build``` command from the Terminal. This will compile these CDS definitions into HANA specific development artifacts.  Now deploy these new definitions into the SAP HANA Cloud database using the command ```npm run hana``` from the terminal. Your output should look like the following:</br>![Sucessful Deployment](images/cds_build_initial_data_model.png)
 
 14. You can return to the Database Explorer and check your results.  You should now have a Purchase Order Header and Item tables, although they do not yet contain any data.</br>![Data Model in DB](images/database_explorer_data_model.png)
 
@@ -448,7 +448,7 @@ GBP;fr;livre sterling;pound sterling
 ILS;fr;Shekel;shekel israelien
 ```
 
-4. Next we want to add CSV files for the main transational tables.  There are many more records in these files, so please cut and paste them directly from these links.  Start by creating the file **/db/data/teched.PurchaseOrder-Headers.csv**. You can copy the data from [teched.PurchaseOrder-Headers.csv](code/db/data/teched.PurchaseOrder-Headers.csv) but please switch to Raw in Github to get a clear Copy and Paste. ![Switch to Raw](images/switch_to_raw.png)
+4. Next we want to add CSV files for the main transactional tables.  There are many more records in these files, so please cut and paste them directly from these links.  Start by creating the file **/db/data/teched.PurchaseOrder-Headers.csv**. You can copy the data from [teched.PurchaseOrder-Headers.csv](code/db/data/teched.PurchaseOrder-Headers.csv) but please switch to Raw in Github to get a clear Copy and Paste. ![Switch to Raw](images/switch_to_raw.png)
 
 5. Repeat this process for Purchase Order Items in file **/db/data/teched.PurchaseOrder-Items.csv**, copy from [teched.PurchaseOrder-Items.csv](code/db/data/teched.PurchaseOrder-teched.PurchaseOrder-Items.csv)
 
@@ -456,10 +456,10 @@ ILS;fr;Shekel;shekel israelien
 
 7. Check results in the Database Explorer. You should now have data in your PO header and item tables </br>![Data Preview for POs](images/data_loaded.png)
 
-8. Notice that for the Currencies we also have a view defined. This is becuase of the localized column. The localized feature created a view with **SESSION_CONTEXT('LOCALE')**. This will be used by CAP to automatically load the description for the current logon language. We will see this feature in action later once we have the service interface for our project.</br> ![Localized View](images/localized_view.png)
+8. Notice that for the Currencies we also have a view defined. This is because of the localized column. The localized feature created a view with **SESSION_CONTEXT('LOCALE')**. This will be used by CAP to automatically load the description for the current logon language. We will see this feature in action later once we have the service interface for our project.</br> ![Localized View](images/localized_view.png)
 
 ## Summary
 
-You've now compeleted the data model for our project and loaded it with initial data. Next we will begin creating the service layer for our application so we can expose OData V2 and V4 service endpoints.
+You've now completed the data model for our project and loaded it with initial data. Next we will begin creating the service layer for our application so we can expose OData V2 and V4 service endpoints.
 
 Continue to - [Exercise 3 - Service Layer](../ex3/README.md)

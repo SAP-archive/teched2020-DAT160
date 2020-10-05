@@ -27,7 +27,7 @@ Dev spaces are like isolated virtual machines in the cloud that can be quickly s
 
 4. Enter **HANA_DAT160** for your dev space name and choose **SAP Cloud Business Application** as the kind of application you are creating.</br>![Create Dev Space](images/create_dev_space.png)
 
-5. The Dev space will automatically be configured with the most common tools you need for the type of application you choose. However you can also choose addtional, optional extensions.  For this workshop we would recommend also choosing **CDS Graphical Modeler**.</br>![Optional Tools](images/optional_tools.png)
+5. The Dev space will automatically be configured with the most common tools you need for the type of application you choose. However you can also choose additional, optional extensions.  For this workshop we would recommend also choosing **CDS Graphical Modeler**.</br>![Optional Tools](images/optional_tools.png)
 
 6. Once all selections are completed, press **Create Dev Space**</br>![Press Create Dev Space](images/press_create_dev_space.png)
 
@@ -35,11 +35,11 @@ Dev spaces are like isolated virtual machines in the cloud that can be quickly s
 
 8. Once the Dev Space reaches the green status of **RUNNING**, you can click on the name of the Dev Space and it will load into the editor within your browser</br>![Dev Space is Running](images/dev_space_running.png)
 
-9. You'll be redirected to your newly created SAP Business Application Studio Dev Space. We recommend you bookmark this url, so its easier for you to access this dev space of your SAP Business Application Studio in the future </br>![Business Application Studio is running](images/fully_running.png)
+9. You'll be redirected to your newly created SAP Business Application Studio Dev Space. We recommend you bookmark this URL so it's easier for you to access this dev space of your SAP Business Application Studio in the future </br>![Business Application Studio is running](images/fully_running.png)
 
 ## Configuring Business Application Studio Dev Space
 
-Before we create our SAP Cloud Application Programming Model project, we want to do a few more one-time configuration steps to preare the Dev Space
+Before we create our SAP Cloud Application Programming Model project, we want to do a few more one-time configuration steps to prepare the Dev Space
 
 1. In the bottom left of the Business Application Studio you will see a message that your Organization and Space are not set yet. Click this message to begin supplying your trial connection details</br>![Org and Space Not Set](images/cf_not_set.png)
 
@@ -51,14 +51,14 @@ Before we create our SAP Cloud Application Programming Model project, we want to
 
 5. The next input will ask you for your SAP Cloud Platform trial account password </br>![Password](images/password.png)
 
-6. The next input will ask you for your Organization. In most situations you will have a single choice. But like the API endpoint earlier, if you need to confirm the correct value it will be displaed in the top navigation of the SAP Cloud Platform Cockpit </br>![Organization](images/organization.png)
+6. The next input will ask you for your Organization. In most situations you will have a single choice. But like the API endpoint earlier, if you need to confirm the correct value it will be displayed in the top navigation of the SAP Cloud Platform Cockpit </br>![Organization](images/organization.png)
 
 7. The final input will ask you for your Space. If you choose the endpoint API and Organization correctly, then you should have a single option of **dev** </br>![Space](images/space.png)
 
-8. Upon completion of all the inputs, you should see that the Orgnaization and Space have been set and you will see the values in the Targeting... dialog at the bottom left of the Business Application Studio </br>![Set Correctly](images/org_space_set_correctly.png)
+8. Upon completion of all the inputs, you should see that the Organization and Space have been set and you will see the values in the Targeting... dialog at the bottom left of the Business Application Studio </br>![Set Correctly](images/org_space_set_correctly.png)
 
 ## Summary
 
-Your HANA instance should be running and you've created a Dev Space and configured it for your needs in the Business Appliation Studio. You are now ready to begin development.
+Your HANA instance should be running and you've created a Dev Space and configured it for your needs in the Business Application Studio. You are now ready to begin development.
 
 Continue to - [Exercise 1 - Create CAP Project](../ex1/README.md)
