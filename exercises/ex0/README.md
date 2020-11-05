@@ -15,6 +15,10 @@ In the trial landscape the HANA instance stops each night. Therefore the first t
 
 4. To restart the instance, simply click on the **Start** button. It takes a few minutes, but you can see the status of your instance at the top. You do NOT have to wait while your HANA instance restarts. You can continue on with the subsequent steps and check back on the status in a few minutes.</br>![Instance Stopped](images/trial-instance-stopped-1.png)
 
+5. Double check, using the edit icon to access the instance's settings, that the "Allow all IP addresses" option is selected for the Whitelisted connections setting.
+
+![Accessing the instance settings](images/instance-settings.png)
+
 ## Creating Business Application Studio Dev Space
 
 Dev spaces are like isolated virtual machines in the cloud that can be quickly spun-up. Each dev space type contains tailored tools and pre-installed run-times for a target scenario such as SAP Fiori or mobile development. This simplifies and saves time in setting up the development environment as there’s no need to install anything or upgrade; letting developers focus on their business domain, anytime, anywhere.

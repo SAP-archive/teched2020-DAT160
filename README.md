@@ -13,12 +13,15 @@ Learn the basics of developing with SAP HANA Cloud combined with other cloud nat
 ## Requirements
 
 * Get a Free Trial Account on SAP Cloud Platform: [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html)
-  
+
 * If you have an existing trial account, please make sure it isn't going to expire before you need it for this workshop ![Trial Period](requirements/trial-counter.png)
-  
-* Set Up SAP Business Application Studio for development: [tutorial](https://developers.sap.com/tutorials/appstudio-onboarding.html)
-  
-* Create an instance of the SAP HANA Cloud in your trial account: [tutorial](https://saphanajourney.com/hana-cloud/learning-article/how-to-create-your-trial-sap-hana-cloud-instance/)
+
+* Set Up SAP Business Application Studio for development: [tutorial](https://developers.sap.com/tutorials/appstudio-onboarding.html).
+
+* Create an instance of the SAP HANA Cloud in your trial account, making sure, in the "Advanced Settings" part of the wizard (right before you select "Create Instance"), that you select "Allow all IP addresses" in the "Whitelisted connections" setting. Use this tutorial to set up the instance: [tutorial](https://saphanajourney.com/hana-cloud/learning-article/how-to-create-your-trial-sap-hana-cloud-instance/).
+
+![Selecting 'Allow all IP addresses' in the Whitelisted connections setting](requirements/allow-all-ip-addresses.png)
+
 
 ## Exercises
 
@@ -29,7 +32,7 @@ Learn the basics of developing with SAP HANA Cloud combined with other cloud nat
 * [Exercise 1 - Create CAP Project](exercises/ex1/)
   * [Exercise 1.1 - Create Project From Template](exercises/ex1#exercise-11-create-project-from-template)
   * [Exercise 1.2 - Adjust package.json](exercises/ex1#exercise-12-adjust-packagejson)
-  * [Exercise 1.3 - Build Sample Project Into HANA](exercises/ex1#exercise-13-build-sample-project-into-hana) 
+  * [Exercise 1.3 - Build Sample Project Into HANA](exercises/ex1#exercise-13-build-sample-project-into-hana)
 * [Exercise 2 - Building the Data Model](exercises/ex2/)
   * [Exercise 2.1 - Cleanup and Preparations for New Data Model](exercises/ex2#exercise-21-cleanup-and-preparations-fo-new-data-model)
   * [Exercise 2.2 - Create Data Model](exercises/ex2#exercise-22-create-data-model)
@@ -41,10 +44,10 @@ Learn the basics of developing with SAP HANA Cloud combined with other cloud nat
 * [Exercise 4 - User Interface](exercises/ex4/)
   * [Exercise 4.1 - Add Fiori Annotations](exercises/ex4#exercise-41-add-fiori-annotations)
   * [Exercise 4.2 - Setup a Fiori Launchpad Sandbox](exercises/ex4#exercise-42-setup-a-fiori-launchpad-sandbox)
-  * [Exercise 4.3 - Generate a Fiori Application](exercises/ex4#exercise-43-generate-a-fiori-application) 
+  * [Exercise 4.3 - Generate a Fiori Application](exercises/ex4#exercise-43-generate-a-fiori-application)
 * [Exercise 5 - Function Implemented as Stored Procedure](exercises/ex5/)
-  * [Exercise 5.1 - Add Stored Procedure and Use it to Implement a CAP Function](exercises/ex5#exercise-51-add-stored-procedure-and-use-it-to-implement-a-cap-function) 
-  
+  * [Exercise 5.1 - Add Stored Procedure and Use it to Implement a CAP Function](exercises/ex5#exercise-51-add-stored-procedure-and-use-it-to-implement-a-cap-function)
+
 ## How to obtain support
 
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
