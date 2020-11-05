@@ -20,8 +20,6 @@ Learn the basics of developing with SAP HANA Cloud combined with other cloud nat
 
 * Create an instance of the SAP HANA Cloud in your trial account, making sure, in the "Advanced Settings" part of the wizard (right before you select "Create Instance"), that you select "Allow all IP addresses" in the "Whitelisted connections" setting. Use this tutorial to set up the instance: [tutorial](https://saphanajourney.com/hana-cloud/learning-article/how-to-create-your-trial-sap-hana-cloud-instance/).
 
-![Selecting 'Allow all IP addresses' in the Whitelisted connections setting](requirements/allow-all-ip-addresses.png)
-
 
 ## Exercises
 
