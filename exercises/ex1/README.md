@@ -24,7 +24,7 @@ After completing these steps you will have made the necessary changes and additi
 
 1. Open the package.json in the root of your project. If you mouse over the version number of the dependencies you will see the most recent version available.  Please make sure that the @sap/hana-client version is using 2.5.x or higher. </br>![package.json HANA Client update](images/package_json_hana_client.png)
 
-2. In the cds section of the package.json (toward the bottom of the file) you will find that the wizard generated some content but it's designed for deploying for local testing to SQLite. We want to change the content to support SAP HANA Cloud. The completely content of this section should match the following code:
+2. In the cds section of the package.json (toward the bottom of the file) you will find that the wizard generated some content but it's designed for deploying for local testing to SQLite. We want to change the content to support SAP HANA Cloud. The complete content of this section should match the following code:
 
 ```json
 "cds": {
@@ -57,13 +57,13 @@ After completing these steps you will have made the necessary changes and additi
 
 ## Exercise 1.3 Build Sample Project Into HANA
 
-After completing these steps you will have built the sample project contents and deployed them into the SAP HANA Cloud database
+After completing these steps you will have built the sample project contents and deployed them into the SAP HANA Cloud database.
 
 1. From the same terminal window, issue the following command ```npm run build```.  This will kick off one the scripts we defined in the package.json. This particular script will issue the cds build which in turn will compile the data definitions of your project into HANA specific development artifacts.
 
 2. You should see output from the command similar to this screenshot. The list of artifacts should include hdbview, hdbtable, and hdbtabledata artifacts.</br>![CDS Build Results](images/cds_build.png)
 
-3. All of this content was placed into a separate **/gen** folder in your project. The keeps the sources separate from the deployable/executable portions of your project.  You can see this addition to the project structure in the main project navigation area.</br>![Build Creates gen Folder](images/gen_folder.png)
+3. All of this content was placed into a separate **/gen** folder in your project. This keeps the sources separate from the deployable/executable portions of your project.  You can see this addition to the project structure in the main project navigation area.</br>![Build Creates gen Folder](images/gen_folder.png)
 
 4. Now we want to send this content into the SAP HANA Cloud database.  For this we will use another script from our package.json. Execute this command in the terminal: ```npm run hana```. This command will use the cds command line tool (cli) to create an HDI container (named dat160) and then deploy all of the content from **/gen/db** into that HDI container.
 
