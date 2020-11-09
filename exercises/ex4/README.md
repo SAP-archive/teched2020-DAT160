@@ -375,7 +375,7 @@ After completing these steps you will have used the Fiori Tools to generate a fu
 
 11. Choose **POHeaders** as your Main Entity and **item** as your navigation entity. The wizard is reading the metadata document of your service to propose values and validate your input. Press **Next**. </br>![Entity Selection](images/entity_selection.png)
 
-12. Fill in the following values for the Project Attributes and press **Finish**. </br>![Project Attributes](images/project_attributes.png)
+12. Fill in the following values for the Project Attributes and press **Finish**. Please be sure to match the values closely. Otherwise the application the wizard generates will not match to the subsequent steps in this exercise. </br>![Project Attributes](images/project_attributes.png) </br> And a zoomed version of this same information:</br>![Project Attributes Zoomed](image/../images/project_attributes_bigger.png)
 
 13. You have a fully generated Fiori application in your **/app/resources** folder. The only change you need to make is open the **manifest.json** file and edit the **dataSources.mainService.uri**. The current value of **/here/goes/your/serviceurl/** needs to be changed to your actual service URL of **/v2/catalog**</br> ![Edit Manifest before](images/edit_manifest1.png)</br>![Edit Manifest After](images/edit_manifest2.png)
 
