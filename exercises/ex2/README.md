@@ -328,7 +328,9 @@ context teched.PurchaseOrder {
 }
 ```
 
-13. Annotations allow us to add metadata and other features not directly defined in the main CDS syntax to our data model. For example Annotations might be used to add text descriptions to a data model.  They are also heavily used in describing the user interface without getting into UI technology specifics.</br>Annotations are inherited from types and base types to derived types, entities, and elements as well as from elements of underlying entities in case of views. Although we could have defined the annotations directly in the entity definitions, a common best practice is separate the annotations from the entity definition for better maintenance. In fact we will create a separate file in our project for our annotations.</br> Create a new file in the **/db** folder named **po-annotations.cds**. Use the following coding for this file.
+13. Annotations allow us to add metadata and other features not directly defined in the main CDS syntax to our data model. For example Annotations might be used to add text descriptions to a data model.  They are also heavily used in describing the user interface without getting into UI technology specifics.</br>Annotations are inherited from types and base types to derived types, entities, and elements as well as from elements of underlying entities in case of views. Although we could have defined the annotations directly in the entity definitions, a common best practice is separate the annotations from the entity definition for better maintenance. In fact we will create a separate file in our project for our annotations.</br> Create a new file in the **/db** folder named **po-annotations.cds**. 
+    
+14. Use the following coding for the **po-annotations.cds** file.
 
 ```cds
 using teched.PurchaseOrder as PO from './data-model';
@@ -403,9 +405,9 @@ annotate Items with {
 }
 ```
 
-14. Build the new data model using the ```npm run build``` command from the Terminal. This will compile these CDS definitions into HANA specific development artifacts.  Now deploy these new definitions into the SAP HANA Cloud database using the command ```npm run hana``` from the terminal. Your output should look like the following:</br>![Sucessful Deployment](images/cds_build_initial_data_model.png)
+15. Build the new data model using the ```npm run build``` command from the Terminal. This will compile these CDS definitions into HANA specific development artifacts.  Now deploy these new definitions into the SAP HANA Cloud database using the command ```npm run hana``` from the terminal. Your output should look like the following:</br>![Sucessful Deployment](images/cds_build_initial_data_model.png)
 
-15. You can return to the Database Explorer and check your results.  You should now have a Purchase Order Header and Item tables, although they do not yet contain any data.</br>![Data Model in DB](images/database_explorer_data_model.png)
+16. You can return to the Database Explorer and check your results.  You should now have a Purchase Order Header and Item tables, although they do not yet contain any data.</br>![Data Model in DB](images/database_explorer_data_model.png)
 
 ## Exercise 2.3 Load Initial Data From CSV
 
