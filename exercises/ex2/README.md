@@ -122,15 +122,15 @@ productImage=Product Image
 productImageType=Product Image Typ
 ```
 
-5. Navigate to the **data-model.cds** in the **/db** folder and open it for editing. Clear all of the sample content from this file</br>![Delete Data Model](images/delete_data_model.png)
-
 ## Exercise 2.2 Create Data Model
 
 After completing these steps you will have created a Purchase Order header and item table using Core Data Services (CDS)
 
-1. Return to the **/db/data-model.cds** file. This is where we will build our complete application data model
+1. Navigate to the **data-model.cds** in the **/db** folder and open it for editing. Clear all of the sample content from this file</br>![Delete Data Model](images/delete_data_model.png)
+   
+2. Continue editing in this **/db/data-model.cds** file. This is where we will build our complete application data model
 
-2. We start with a **using** block. This is how we import existing types and other reusable parts from other **cds** files, including from SAP standard delivered ones. Here were using the @sap/cds/common which contains valuable enterprise reuse concepts like currency conversion, generated GUID keys, etc.  This module is stored in the public npm repository as part of the @sap/cds module and needs no special configuration to load or reuse it.
+3. We start with a **using** block. This is how we import existing types and other reusable parts from other **cds** files, including from SAP standard delivered ones. Here were using the @sap/cds/common which contains valuable enterprise reuse concepts like currency conversion, generated GUID keys, etc.  This module is stored in the public npm repository as part of the @sap/cds module and needs no special configuration to load or reuse it.
 
 ```cds
 using {
@@ -141,7 +141,7 @@ using {
 } from '@sap/cds/common';
 ```
 
-3. Using CAP we can also extend and enhance SAP delivered models as well. In the previous step we imported the **Currency** entity.  But now we can extend the definition of that entity and add three of our own columns to it.
+4. Using CAP we can also extend and enhance SAP delivered models as well. In the previous step we imported the **Currency** entity.  But now we can extend the definition of that entity and add three of our own columns to it.
 
 ```cds
 extend sap.common.Currencies with {
@@ -151,7 +151,7 @@ extend sap.common.Currencies with {
 }
 ```
 
-4. Next we want to begin defining our own data model  We will wrap all of our own content in a context. To prefix the names of all subsequent definitions, place a namespace directive at the top of a model. This is comparable to other languages, like Java.  However here we will use a context which is essentially a namespace that can be nested within another section.
+5. Next we want to begin defining our own data model  We will wrap all of our own content in a context. To prefix the names of all subsequent definitions, place a namespace directive at the top of a model. This is comparable to other languages, like Java.  However here we will use a context which is essentially a namespace that can be nested within another section.
 
 ```cds
 context teched.common {
@@ -159,14 +159,14 @@ context teched.common {
 }
 ```
 
-5. The rest of the reusable content we will create will all be within this context section.  We will begin by creating some simple, reusable types. You can declare custom types to reuse later on, for example, for elements in entity definitions. Custom-defined types can be simple, that is derived from one of the predefined types, structure types or Associations. 
+6. The rest of the reusable content we will create will all be within this context section.  We will begin by creating some simple, reusable types. You can declare custom types to reuse later on, for example, for elements in entity definitions. Custom-defined types can be simple, that is derived from one of the predefined types, structure types or Associations. 
 
 ```cds
     type BusinessKey : String(10);
     type SDate : DateTime;
 ```
 
-6. You can specify enumeration values for a type as a semicolon-delimited list of symbols. String and integer enums are supported. Here we will create an Enumeration for possible Purchase Order statuses. Also notice the annotation ```@assert.range```. This will trigger CAP to also validate any input data for field using this type and check that all values must be defined in the enumeration.
+7. You can specify enumeration values for a type as a semicolon-delimited list of symbols. String and integer enums are supported. Here we will create an Enumeration for possible Purchase Order statuses. Also notice the annotation ```@assert.range```. This will trigger CAP to also validate any input data for field using this type and check that all values must be defined in the enumeration.
 
 ```cds
     @assert.range : true
@@ -182,7 +182,7 @@ context teched.common {
     }
 ```
 
-7. We can also declare custom structure types, combining multiple fields together into one reusable unit which gets expanded into the entity in which they are used.</br>When mapped to relational databases, such entity definitions are translated to tables. You can prefix an entity definition with the keyword abstract to not create a table (or view) when mapped to a database
+8. We can also declare custom structure types, combining multiple fields together into one reusable unit which gets expanded into the entity in which they are used.</br>When mapped to relational databases, such entity definitions are translated to tables. You can prefix an entity definition with the keyword abstract to not create a table (or view) when mapped to a database
 
 ```cds
     type AmountT : Decimal(15, 2)@(
@@ -204,7 +204,7 @@ context teched.common {
     }
 ```
 
-8. Similar to our Amount abstract entity, let's also add a another one for Quantity and Quantity Unit.
+9. Similar to our Amount abstract entity, let's also add a another one for Quantity and Quantity Unit.
 
 ```cds
     type QuantityT : Decimal(13, 3)@(title : '{i18n>quantity}');
@@ -216,7 +216,7 @@ context teched.common {
     }
 ```
 
-9. Entities are structured types with named and typed elements, representing sets of (persisted) data that can be read and manipulated using usual CRUD operations. They usually contain one or more designated primary key elements. Here we have the entity for our Purchase Order Headers table.  We also switch to a new context to separate the transactional table from our earlier reusable types and abstract entities. </br>This example also uses Compositions to the Item entity we will create momentarily. Compositions constitute document structures through ‘contained-in’ relationships. They frequently show up in to-many header-child scenarios. Essentially Compositions are the same as associations, just with the additional information that this association represents a contained-in relationship so the same syntax and rules apply in their base form.
+10. Entities are structured types with named and typed elements, representing sets of (persisted) data that can be read and manipulated using usual CRUD operations. They usually contain one or more designated primary key elements. Here we have the entity for our Purchase Order Headers table.  We also switch to a new context to separate the transactional table from our earlier reusable types and abstract entities. </br>This example also uses Compositions to the Item entity we will create momentarily. Compositions constitute document structures through ‘contained-in’ relationships. They frequently show up in to-many header-child scenarios. Essentially Compositions are the same as associations, just with the additional information that this association represents a contained-in relationship so the same syntax and rules apply in their base form.
 
 ```cds
 context teched.PurchaseOrder {
@@ -235,7 +235,7 @@ context teched.PurchaseOrder {
 }
 ```
 
-10. Now for the Purchase Order Items entity.  Here we use an Association back to the Header entity. This is a managed association. For to-one associations, CDS can automatically resolve and add requisite foreign key elements from the target’s primary keys and implicitly add respective join conditions.
+11. Now for the Purchase Order Items entity.  Here we use an Association back to the Header entity. This is a managed association. For to-one associations, CDS can automatically resolve and add requisite foreign key elements from the target’s primary keys and implicitly add respective join conditions.
 
 ```cds
     entity Items : cuid, teched.common.Amount, teched.common.Quantity {
@@ -246,7 +246,7 @@ context teched.PurchaseOrder {
     }
 ```
 
-11. We've described several different parts of the data model we want to create and there are some sections nested using different contexts.  The complete file should look like the following.  Be sure to match up to this example.
+12. We've described several different parts of the data model we want to create and there are some sections nested using different contexts.  The complete file should look like the following.  Be sure to match up to this example.
 
 ```cds
 using {
@@ -328,7 +328,7 @@ context teched.PurchaseOrder {
 }
 ```
 
-12. Annotations allow us to add metadata and other features not directly defined in the main CDS syntax to our data model. For example Annotations might be used to add text descriptions to a data model.  They are also heavily used in describing the user interface without getting into UI technology specifics.</br>Annotations are inherited from types and base types to derived types, entities, and elements as well as from elements of underlying entities in case of views. Although we could have defined the annotations directly in the entity definitions, a common best practice is separate the annotations from the entity definition for better maintenance. In fact we will create a separate file in our project for our annotations.</br> Create a new file in the **/db** folder named **po-annotations.cds**. Use the following coding for this file.
+13. Annotations allow us to add metadata and other features not directly defined in the main CDS syntax to our data model. For example Annotations might be used to add text descriptions to a data model.  They are also heavily used in describing the user interface without getting into UI technology specifics.</br>Annotations are inherited from types and base types to derived types, entities, and elements as well as from elements of underlying entities in case of views. Although we could have defined the annotations directly in the entity definitions, a common best practice is separate the annotations from the entity definition for better maintenance. In fact we will create a separate file in our project for our annotations.</br> Create a new file in the **/db** folder named **po-annotations.cds**. Use the following coding for this file.
 
 ```cds
 using teched.PurchaseOrder as PO from './data-model';
@@ -403,9 +403,9 @@ annotate Items with {
 }
 ```
 
-13. Build the new data model using the ```npm run build``` command from the Terminal. This will compile these CDS definitions into HANA specific development artifacts.  Now deploy these new definitions into the SAP HANA Cloud database using the command ```npm run hana``` from the terminal. Your output should look like the following:</br>![Sucessful Deployment](images/cds_build_initial_data_model.png)
+14. Build the new data model using the ```npm run build``` command from the Terminal. This will compile these CDS definitions into HANA specific development artifacts.  Now deploy these new definitions into the SAP HANA Cloud database using the command ```npm run hana``` from the terminal. Your output should look like the following:</br>![Sucessful Deployment](images/cds_build_initial_data_model.png)
 
-14. You can return to the Database Explorer and check your results.  You should now have a Purchase Order Header and Item tables, although they do not yet contain any data.</br>![Data Model in DB](images/database_explorer_data_model.png)
+15. You can return to the Database Explorer and check your results.  You should now have a Purchase Order Header and Item tables, although they do not yet contain any data.</br>![Data Model in DB](images/database_explorer_data_model.png)
 
 ## Exercise 2.3 Load Initial Data From CSV
 
