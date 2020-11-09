@@ -132,7 +132,7 @@ module.exports = cds.service.impl(function () {
 })
 ```
 
-1. We will be able to test that later once we have our full Fiori UI and can edit or create records from it.
+We will be able to test that later once we have our full Fiori UI and can edit or create records from it.
 
 ## Summary
 
