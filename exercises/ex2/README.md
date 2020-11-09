@@ -450,7 +450,7 @@ ILS;fr;Shekel;shekel israelien
 
 4. Next we want to add CSV files for the main transactional tables.  There are many more records in these files, so please cut and paste them directly from these links.  Start by creating the file **/db/data/teched.PurchaseOrder-Headers.csv**. You can copy the data from [teched.PurchaseOrder-Headers.csv](code/db/data/teched.PurchaseOrder-Headers.csv) but please switch to Raw in Github to get a clear Copy and Paste. ![Switch to Raw](images/switch_to_raw.png)
 
-5. Repeat this process for Purchase Order Items in file **/db/data/teched.PurchaseOrder-Items.csv**, copy from [teched.PurchaseOrder-Items.csv](code/db/data/teched.PurchaseOrder-teched.PurchaseOrder-Items.csv)
+5. Repeat this process for Purchase Order Items in file **/db/data/teched.PurchaseOrder-Items.csv**, copy from [teched.PurchaseOrder-Items.csv](code/db/data/teched.PurchaseOrder-Items.csv)
 
 6. Repeat the process from earlier to deploy the content into the database.  From the terminal first build using ```npm run build```.  Then deploy to HANA using ```npm run hana```.
 
