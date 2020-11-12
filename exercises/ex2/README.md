@@ -99,7 +99,7 @@ salaryAmount=Salary Amount
 bankId=Bank ID
 bankName=Bank Name
 employeePicUrl=Employee Picture URL
-businessParnters=Business Partners
+businessPartners=Business Partners
 typeCode=Type Code
 category=Product Category
 name=Product Name
@@ -119,16 +119,16 @@ userService=User
 userServices=Users
 user_id=User ID
 productImage=Product Image
-productImageType=Product Image Typ
+productImageType=Product Image Type
 ```
 
 ## Exercise 2.2 Create Data Model
 
-After completing these steps you will have created a Purchase Order header and item table using Core Data Services (CDS)
+After completing these steps you will have created a Purchase Order header and item table using Core Data Services (CDS).
 
-1. Navigate to the **data-model.cds** in the **/db** folder and open it for editing. Clear all of the sample content from this file</br>![Delete Data Model](images/delete_data_model.png)
+1. Navigate to the **data-model.cds** in the **/db** folder and open it for editing. Clear all of the sample content from this file</br>![Delete Data Model](images/delete_data_model.png).
    
-2. Continue editing in this **/db/data-model.cds** file. This is where we will build our complete application data model
+2. Continue editing in this **/db/data-model.cds** file. This is where we will build our complete application data model.
 
 3. We start with a **using** block. This is how we import existing types and other reusable parts from other **cds** files, including from SAP standard delivered ones. Here were using the @sap/cds/common which contains valuable enterprise reuse concepts like currency conversion, generated GUID keys, etc.  This module is stored in the public npm repository as part of the @sap/cds module and needs no special configuration to load or reuse it.
 
@@ -159,7 +159,7 @@ context teched.common {
 }
 ```
 
-6. The rest of the reusable content we will create will all be within this context section.  We will begin by creating some simple, reusable types. You can declare custom types to reuse later on, for example, for elements in entity definitions. Custom-defined types can be simple, that is derived from one of the predefined types, structure types or Associations. 
+6. The next few sections of reusable content will all be within this context section.  We will begin by creating some simple, reusable types. You can declare custom types to reuse later on, for example, for elements in entity definitions. Custom-defined types can be simple, that is derived from one of the predefined types, structure types or Associations. 
 
 ```cds
     type BusinessKey : String(10);
@@ -204,7 +204,7 @@ context teched.common {
     }
 ```
 
-9. Similar to our Amount abstract entity, let's also add a another one for Quantity and Quantity Unit.
+9. Similar to our Amount abstract entity, let's also add a another one for Quantity and Quantity Unit.<br><br>Note that this is the last bit of content that will be contained within the `teched.common` context.
 
 ```cds
     type QuantityT : Decimal(13, 3)@(title : '{i18n>quantity}');
@@ -216,7 +216,7 @@ context teched.common {
     }
 ```
 
-10. Entities are structured types with named and typed elements, representing sets of (persisted) data that can be read and manipulated using usual CRUD operations. They usually contain one or more designated primary key elements. Here we have the entity for our Purchase Order Headers table.  We also switch to a new context to separate the transactional table from our earlier reusable types and abstract entities. </br>This example also uses Compositions to the Item entity we will create momentarily. Compositions constitute document structures through ‘contained-in’ relationships. They frequently show up in to-many header-child scenarios. Essentially Compositions are the same as associations, just with the additional information that this association represents a contained-in relationship so the same syntax and rules apply in their base form.
+10. Entities are structured types with named and typed elements, representing sets of (persisted) data that can be read and manipulated using usual CRUD operations. They usually contain one or more designated primary key elements. Here we have the entity for our Purchase Order Headers table.  <br><br>We also switch to a new context, to separate the transactional table from our earlier reusable types and abstract entities. </br></br>This example also uses Compositions to the Item entity we will create momentarily. Compositions constitute document structures through ‘contained-in’ relationships. They frequently show up in to-many header-child scenarios. Essentially Compositions are the same as associations, just with the additional information that this association represents a contained-in relationship so the same syntax and rules apply in their base form.
 
 ```cds
 context teched.PurchaseOrder {
@@ -235,7 +235,7 @@ context teched.PurchaseOrder {
 }
 ```
 
-11. Now for the Purchase Order Items entity.  Here we use an Association back to the Header entity. This is a managed association. For to-one associations, CDS can automatically resolve and add requisite foreign key elements from the target’s primary keys and implicitly add respective join conditions.
+11. Now for the Purchase Order Items entity, which also goes inside the `teched.PurchaseOrder` context along with the `Headers` entity. Here we use an Association back to the Header entity. This is a managed association. For to-one associations, CDS can automatically resolve and add requisite foreign key elements from the target’s primary keys and implicitly add respective join conditions.
 
 ```cds
     entity Items : cuid, teched.common.Amount, teched.common.Quantity {
@@ -450,7 +450,7 @@ GBP;fr;livre sterling;pound sterling
 ILS;fr;Shekel;shekel israelien
 ```
 
-4. Next we want to add CSV files for the main transactional tables.  There are many more records in these files, so please cut and paste them directly from these links.  Start by creating the file **/db/data/teched.PurchaseOrder-Headers.csv**. You can copy the data from [teched.PurchaseOrder-Headers.csv](code/db/data/teched.PurchaseOrder-Headers.csv) but please switch to Raw in Github to get a clear Copy and Paste. ![Switch to Raw](images/switch_to_raw.png)
+4. Next we want to add CSV files for the main transactional tables.  There are many more records in these files, so please cut and paste them directly from these links.  Start by creating the file **/db/data/teched.PurchaseOrder-Headers.csv**. You can copy the data from [teched.PurchaseOrder-Headers.csv](code/db/data/teched.PurchaseOrder-Headers.csv) but please switch to Raw in GitHub to get a clear Copy and Paste. ![Switch to Raw](images/switch_to_raw.png)
 
 5. Repeat this process for Purchase Order Items in file **/db/data/teched.PurchaseOrder-Items.csv**, copy from [teched.PurchaseOrder-Items.csv](code/db/data/teched.PurchaseOrder-Items.csv)
 
