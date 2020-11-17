@@ -27,7 +27,12 @@ After completing these steps you will have made the necessary changes and additi
 2. In the cds section of the package.json (toward the bottom of the file) you will find that the wizard generated some content but it's designed for deploying for local testing to SQLite. We want to change the content to support SAP HANA Cloud. The complete content of this section should match the following code:
 
 ```json
-"cds": {
+    "cds": {
+        "preview": {
+            "ui5": {
+                "version": "1.80.2"
+            }
+        },
         "hana": {
             "deploy-format": "hdbtable"
         },
@@ -36,7 +41,7 @@ After completing these steps you will have made the necessary changes and additi
                 "kind": "hana"
             }
         }
-    }  
+    }
 ```
 
 3. Although not required, we can add certain scripts to the package.json as well. These can be used to help automate certain commands or even just provide shortcuts to the cds command line tool.  Please update the scripts section to have the following three entries (replacing the one that is already in the file)
