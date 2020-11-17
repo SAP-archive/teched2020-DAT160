@@ -2,7 +2,7 @@
 
 [![code](https://flat.badgen.net/badge/code/available/green?icon=github)](./code/)
 
-In this exercise we will create a project from template, adjust it to work with the SAP HANA Cloud and then finally deploy the initial sample content to the SAP HANA Cloud.
+In this exercise we will create a project from template, adjust it to work with the SAP HANA Cloud and then finally deploy the initial sample content to the SAP HANA Cloud. You can always access the SAP Cloud Platform Trail homepage from this link: [https://account.hanatrial.ondemand.com/](https://account.hanatrial.ondemand.com/)
 
 ## Exercise 1.1 Create Project From Template
 
