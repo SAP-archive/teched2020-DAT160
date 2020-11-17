@@ -12,7 +12,9 @@ Learn the basics of developing with SAP HANA Cloud combined with other cloud nat
 
 ## Requirements
 
-* Get a Free Trial Account on SAP Cloud Platform: [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html) [video](https://youtu.be/n5luSQKYvQQ)
+* Get a Free Trial Account on SAP Cloud Platform: 
+** [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html) 
+** [video](https://youtu.be/n5luSQKYvQQ)
 
 * Set Up SAP Business Application Studio for development: [tutorial](https://developers.sap.com/tutorials/appstudio-onboarding.html) [video](https://youtu.be/WW6z4AnYriw)
 
