@@ -13,10 +13,12 @@ Learn the basics of developing with SAP HANA Cloud combined with other cloud nat
 ## Requirements
 
 * Get a Free Trial Account on SAP Cloud Platform: 
-** [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html) 
-** [video](https://youtu.be/n5luSQKYvQQ)
+  * [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html) 
+  * [video](https://youtu.be/n5luSQKYvQQ)
 
-* Set Up SAP Business Application Studio for development: [tutorial](https://developers.sap.com/tutorials/appstudio-onboarding.html) [video](https://youtu.be/WW6z4AnYriw)
+* Set Up SAP Business Application Studio for development: 
+  * [tutorial](https://developers.sap.com/tutorials/appstudio-onboarding.html) 
+  * [video](https://youtu.be/WW6z4AnYriw)
 
 * Create an instance of the SAP HANA Cloud in your trial account (if you don't already have an instance):
 From the SAP Cloud Platform entry page, press the `?` icon in the upper right corner. Then press the `Guided Tours` button. Finally select the `Create a SAP HANA Cloud Instance` guided tour. Please make sure, in the "Advanced Settings" part of the wizard (right before you select "Create Instance"), that you select "Allow all IP addresses" in the "Allowed connections" setting. 
