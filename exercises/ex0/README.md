@@ -4,7 +4,7 @@ In this exercise, you will perform the basic setup to get a SAP Cloud Applicatio
 
 ## Is HANA running?
 
-In the trial landscape the HANA instance stops each night. Therefore the first thing we need to do is make sure your HANA instance is running.
+In the ![trial landscape](https://account.hanatrial.ondemand.com/) the HANA instance stops each night. Therefore the first thing we need to do is make sure your HANA instance is running.
 
 1. From the SAP Cloud Platform entry page, click **Subaccounts** and then the tile for your Subaccount named **trial**
 </br>![Subaccount](/exercises/ex0/images/subaccount.png)
