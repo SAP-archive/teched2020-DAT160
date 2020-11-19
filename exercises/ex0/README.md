@@ -1,10 +1,11 @@
 # Getting Started
 
-In this exercise, you will perform the basic setup to get a SAP Cloud Application Programming Model (CAP) project created and ready for further development.
-[![Video of Exercise 0](http://img.youtube.com/vi/8rT-PEUg8Uw/0.jpg)](http://www.youtube.com/watch?v=8rT-PEUg8Uw "SAP TechEd 2020 DAT160: Exercise 0 - Getting Started")
+In this exercise, you will perform the basic setup to get a SAP Cloud Application Programming Model (CAP) project created and ready for further development.</br>
+[![Video of Exercise 0](http://img.youtube.com/vi/8rT-PEUg8Uw/0.jpg)](http://www.youtube.com/watch?v=8rT-PEUg8Uw "Video of SAP TechEd 2020 DAT160: Exercise 0 - Getting Started")
 
 ## Is HANA running?
 
+[Video Link](https://www.youtube.com/watch?v=8rT-PEUg8Uw&t=20s)</br>
 In the [trial landscape](https://account.hanatrial.ondemand.com/) the HANA instance stops each night. Therefore the first thing we need to do is make sure your HANA instance is running.
 
 1. From the SAP Cloud Platform entry page, click **Subaccounts** and then the tile for your Subaccount named **trial**
@@ -24,6 +25,7 @@ In the [trial landscape](https://account.hanatrial.ondemand.com/) the HANA insta
 
 ## Creating Business Application Studio Dev Space
 
+[Video Link](https://www.youtube.com/watch?v=8rT-PEUg8Uw&t=297s)</br>
 Dev spaces are like isolated virtual machines in the cloud that can be quickly spun-up. Each dev space type contains tailored tools and pre-installed run-times for a target scenario such as SAP Fiori or mobile development. This simplifies and saves time in setting up the development environment as there’s no need to install anything or upgrade; letting developers focus on their business domain, anytime, anywhere.
 
 1. Go to your SAP Cloud Platform subaccount and click the **Subscriptions** option.</br>![Subscriptions](images/01-01%20SCP%20Subscriptions_.jpg)
@@ -46,6 +48,7 @@ Dev spaces are like isolated virtual machines in the cloud that can be quickly s
 
 ## Configuring Business Application Studio Dev Space
 
+[Video Link](https://www.youtube.com/watch?v=8rT-PEUg8Uw&t=526s)</br>
 Before we create our SAP Cloud Application Programming Model project, we want to do a few more one-time configuration steps to prepare the Dev Space
 
 1. In the bottom left of the Business Application Studio you will see a message that your Organization and Space are not set yet. Click this message to begin supplying your trial connection details</br>![Org and Space Not Set](images/cf_not_set.png)
