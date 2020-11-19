@@ -9,13 +9,17 @@ In the [trial landscape](https://account.hanatrial.ondemand.com/) the HANA insta
 1. From the SAP Cloud Platform entry page, click **Subaccounts** and then the tile for your Subaccount named **trial**
 </br>![Subaccount](/exercises/ex0/images/subaccount.png)
 
-2. In the left side menu choose **SAP HANA Cloud**. You should see your instance details displayed. If not, please return to the [Requirements](../../README.md#Requirements) and follow the steps for "Create an instance of the SAP HANA Cloud in your trial account"</br>![HANA Cloud Instance](images/3_2.png)
+1. Then click on your **dev** space to navigate to the space level. </br>![Space select](/exercises/ex0/images/space_select.png)
 
-3. If your instance is stopped, the status on the top of the tile will be updated and the button at the bottom will change to **Start**.
+2. In the left side menu choose **SAP HANA Cloud**. You should see your instance listed. If not, please return to the [Requirements](../../README.md#Requirements) and follow the steps for "Create an instance of the SAP HANA Cloud in your trial account"</br>![HANA Cloud Instance](images/3_2.png)
 
-4. To restart the instance, simply click on the **Start** button. It takes a few minutes, but you can see the status of your instance at the top. You do NOT have to wait while your HANA instance restarts. You can continue on with the subsequent steps and check back on the status in a few minutes.</br>![Instance Stopped](images/trial-instance-stopped-1.png)
+3. We can no longer see the status of our instance from this screen. In order to check the status or perform other management tasks, please click the **Manage HANA Cloud** button.<br>![Manage HANA Cloud](images/manage_hana_cloud.png)
+   
+4. The SAP HANA Cloud Databases tool will open in a new browser tab. If your instance is stopped, the status in the first column of the list will state that.</br>![Status Stopped](images/status_stopped.png)
 
-5. Double check, using the edit icon to access the instance's settings, that the "Allow all IP addresses" option is selected for the **Allowed connections** setting.</br>![Accessing the instance settings](images/instance-settings.png)
+5. To restart the instance if it stopped, simply click on the Actions button and then  **Start** button. It takes a few minutes and you will have to press the refresh button to check on the progress. You do NOT have to wait while your HANA instance restarts. You can continue on with the subsequent steps and check back on the status in a few minutes.</br>![Instance Stopped](images/start_me.png)
+
+6. Double check, using the edit option from this same action menu to access the instance's settings, that the "Allow all IP addresses" option is selected for the **Allowed connections** setting.</br>![Edit Settings](images/settings_edit.png)</br></br>![Accessing the instance settings](images/advanced_settings.png)
 
 ## Creating Business Application Studio Dev Space
 
