@@ -6,6 +6,7 @@ In this exercise we will create a project from template, adjust it to work with 
 
 ## Exercise 1.1 Create Project From Template
 
+[Video Link](https://youtu.be/LpN8h19CxoQ)</br>
 After completing these steps you will have created basic CAP project which contains sample data and service definitions.
 
 1. Click **Create project from template** </br>![Create project from template](images/create_project_from_template.png)
@@ -20,6 +21,7 @@ After completing these steps you will have created basic CAP project which conta
 
 ## Exercise 1.2 Adjust package.json
 
+[Video Link](https://youtu.be/jFdBG-mHyHM)</br>
 After completing these steps you will have made the necessary changes and additions to the package.json into order to support deployment to SAP HANA Cloud.
 
 1. Open the package.json in the root of your project. If you mouse over the version number of the dependencies you will see the most recent version available.  Please make sure that the @sap/hana-client version is using 2.5.x or higher. </br>![package.json HANA Client update](images/package_json_hana_client.png)
@@ -62,6 +64,7 @@ After completing these steps you will have made the necessary changes and additi
 
 ## Exercise 1.3 Build Sample Project Into HANA
 
+[Video Link](https://youtu.be/31bdCX0t1aY)</br>
 After completing these steps you will have built the sample project contents and deployed them into the SAP HANA Cloud database.
 
 1. From the same terminal window, issue the following command ```npm run build```.  This will kick off one the scripts we defined in the package.json. This particular script will issue the cds build which in turn will compile the data definitions of your project into HANA specific development artifacts.

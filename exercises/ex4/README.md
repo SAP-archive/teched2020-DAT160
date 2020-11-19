@@ -6,6 +6,7 @@ In this exercise, we will create UI annotations and generate a Fiori Elements ap
 
 ## Exercise 4.1 Add Fiori Annotations
 
+[Video Link](https://youtu.be/_vJdu03A9UM)</br>
 After completing these steps you will have added Fiori annotations to our CAP application.
 
 1. Create a new file **/srv/po-header-fiori.cds**.  Add the following annotation definition to this file. This will add Fiori-specific List and Object annotations. This tells Fiori in a descriptive way which fields from our service should appear in the user interface and how they should act.  All this is done without getting into UI technology specifics. 
@@ -287,6 +288,7 @@ annotate pos.POItems with @( // header-level annotations
 
 ## Exercise 4.2 Setup a Fiori Launchpad Sandbox
 
+[Video Link](https://youtu.be/OgjrgCDhM-Y)</br>
 After completing these steps you will have used created a Fiori Launchpad Sandbox inside your CAP application.
 
 1. Create a file: **/app/resources/index.html** with the following code:
@@ -351,6 +353,7 @@ After completing these steps you will have used created a Fiori Launchpad Sandbo
 
 ## Exercise 4.3 Generate a Fiori Application
 
+[Video Link](https://youtu.be/PJ9ADjPqMWg)</br>
 After completing these steps you will have used the Fiori Tools to generate a full Fiori Elements application.
 
 1. Open the Command Pallet </br>![Open Command](images/open_command_pallet.png)

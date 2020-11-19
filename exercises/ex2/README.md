@@ -6,6 +6,7 @@ In this exercise, we will create a Purchase Order header and item table using Co
 
 ## Exercise 2.1 Cleanup and Preparations for New Data Model
 
+[Video Link](https://youtu.be/JmMXyyUk_80)</br>
 After completing these steps you will have removed the sample data model and prepared your project with translatable texts.
 
 1. Navigate to the **cat-service.cds** in the **/srv** folder and open it for editing. Comment out the using line and the entity. This removes references to the sample content and allows us to begin developing our own data model and build without receiving errors at the service definition layer.</br>![Remove Service Entity](images/remove_service_entity.png)
@@ -124,6 +125,7 @@ productImageType=Product Image Type
 
 ## Exercise 2.2 Create Data Model
 
+[Video Link](https://youtu.be/o--PqmKYJvQ)</br>
 After completing these steps you will have created a Purchase Order header and item table using Core Data Services (CDS).
 
 1. Navigate to the **data-model.cds** in the **/db** folder and open it for editing. Clear all of the sample content from this file</br>![Delete Data Model](images/delete_data_model.png).
@@ -411,6 +413,7 @@ annotate Items with {
 
 ## Exercise 2.3 Load Initial Data From CSV
 
+[Video Link](https://youtu.be/6YfhLNtdG4s)</br>
 After completing these steps you will have CSV files which will load initial, test data into your new tables.
 
 1. In the **/db/data** folder we will now create CSV files to load initial data. </br>![Create CSV files](images/csv_new_file.png)

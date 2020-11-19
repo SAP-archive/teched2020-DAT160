@@ -27,6 +27,8 @@ Learn the basics of developing with SAP HANA Cloud combined with other cloud nat
 
 ## Exercises
 
+[YouTube Playlist With All Exercises](https://www.youtube.com/playlist?list=PL6RpkC85SLQALP9z-q5-vNBFNIy1EEc1q)
+
 * [Getting Started](exercises/ex0/)
   * [Is HANA running?](exercises/ex0#is-hana-running)
   * [Creating Business Application Studio Dev Space](exercises/ex0#creating-business-application-studio-dev-space)

@@ -6,6 +6,7 @@ In this exercise, we will create and test the service layer of our application. 
 
 ## Exercise 3.1 Create Service
 
+[Video Link](https://youtu.be/ecn1nn_M3EM)</br>
 After completing these steps you will have created an OData V4 service from our CAP data model.
 
 1. Edit **/srv/cat-service.cds**. Add the following syntax to the file to expose the Purchase Order Headers and Items entity as part of our service definition.  Notice that we also use the annotation **odata.draft.enabled** on the Purchase Order Header. This is all that is need to activate [Draft-Based Editing](https://experience.sap.com/fiori-design-web/draft-handling/) support. 
@@ -59,6 +60,7 @@ service CatalogService {
 
 ## Exercise 3.2 Add OData V2 Support
 
+[Video Link](https://youtu.be/0KrVsJLqkBQ)</br>
 After completing these steps you will have enhanced your existing service layer with an OData V2 endpoint.
 
 1. The Cloud Application Programming model comes with optional support for OData V2. This is useful for backwards compatibility especially if you need to use the full range of Fiori Elements templates; not all of which have been updated to OData V4 yet. This functionality is proved via additional Node.js module. Return to the root folder **package.json** file and add the dependency to "@sap/cds-odata-v2-adapter-proxy".</br>![Package Dependency](images/package_json_odatav2.png)
@@ -87,6 +89,7 @@ module.exports = cds.server
 
 ## Exercise 3.3 Custom Handlers
 
+[Video Link](https://youtu.be/sOi2haTiNVA)</br>
 After completing these steps you will have added custom logic to the CAP generic service handlers.
 
 1. Create a file named **cat-service.js** in the **/srv** folder. The name must match **cat-service.cds** just with the different file extension for JavaScript. The matching naming tells CAP that you want to use this file to write custom exit handlers for the services defined in **cat-service.cds**. </br>![cat-service.js](images/cat_service_js.png)

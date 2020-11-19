@@ -6,6 +6,8 @@ In this exercise, we will create a service function which is implemented via a H
 
 ## Exercise 5.1 Add Stored Procedure and Use it to Implement a CAP Function
 
+[Video Link](https://youtu.be/0gQ58BTtQ9Q)</br>
+
 1. In the **/db/src** folder create a new file named **sleep.hdbprocedure**. This is a very simple HANA Stored Procedure that calls the built-in SYNC library to put processing to sleep for 10 seconds. It's a nice tool to be able to test the impact of long running queries without actually putting unnecessary load on the system. </br>![sleep](images/sleep_procedure.png)
 
 ```SQL

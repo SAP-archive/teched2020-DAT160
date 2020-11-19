@@ -1,7 +1,6 @@
 # Getting Started
 
 In this exercise, you will perform the basic setup to get a SAP Cloud Application Programming Model (CAP) project created and ready for further development.</br>
-[![Video of Exercise 0](http://img.youtube.com/vi/8rT-PEUg8Uw/0.jpg)](http://www.youtube.com/watch?v=8rT-PEUg8Uw "Video of SAP TechEd 2020 DAT160: Exercise 0 - Getting Started")
 
 ## Is HANA running?
 
