@@ -8,7 +8,7 @@ This repository contains the material for the SAP TechEd 2020 session called DAT
 
 ## Overview
 
-[Lecture Opening Video](https://youtu.be/Ugt_my8BK_4)
+[Lecture Opening Video](https://youtu.be/Ugt_my8BK_4)</br>
 Learn the basics of developing with SAP HANA Cloud combined with other cloud native frameworks and tools. During this session, we discuss how to use the latest capabilities of SAP Cloud Application Programming Model and SAP Business Application Studio to perform state-of-the-art development with SAP HANA.
 
 ## Requirements
