@@ -17,7 +17,7 @@ After completing these steps you will have created basic CAP project which conta
 
 4. Upon completion your project will be generated. You should see a small dialog box in the bottom, right of the screen. Press the **Open in New Worksp...** button to open the new project in your editor</br>![Project Generate](images/project_generated.png)
 
-5. If you want you can swtich between the graphical and the source code based editor with the **Open With** context menu.</br>![Switch Edito](images/switch_editor.png)
+5. If you want you can swtich between the graphical and the source code based editor with the **Open With** context menu. The remainder of the tutorial steps will all use the **Code Editor**</br>![Switch Edito](images/switch_editor.png)
    
 6. The editor will reload and the generated project structure and sample content should be accessible. For example open the /db/data-model.cds file and you should see the definition for the **Books** entity.</br>![Project Review](images/new_cap_project_review.png)
 

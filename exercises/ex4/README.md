@@ -370,19 +370,21 @@ After completing these steps you will have used the Fiori Tools to generate a fu
 
 7. Choose **List Report Object Page** and press **Next**. </br>![List Report Object Page](images/list_report_object_page.png)
 
-8. For the next step we will need the metadata of the **V2** version of our OData service.  Return to the tab with this service running (or restart the service with ```npm start``` if you closed it). Load the metadata for the service and adjust the URL to point to the **V2** version. Save the content to a file locally. </br>![Save Metadata](images/save_metadata.png)
+8. **PLEASE NOTE**: The week before TechEd, the Fiori Tools Wizard was actually updated to directly support OData V4 and it added the ability to load the metadata directly from the local project. However these changes came too close to TechEd to safely adjust this exercise.  Therefore the subsequent steps still use the OData V2 metadata file upload technique.  However we want to make you aware of this new feature and if you want to return to this step after completing the exercise you might want to experiment with this new capability. </br> ![New Feature](images/NewFeature.png)
 
-9. Now upload that **metadata.xml** file you just saved to the root of your project</br>![Upload metadata](images/upload_metadata.png)
+9. For the next step we will need the metadata of the **V2** version of our OData service.  Return to the tab with this service running (or restart the service with ```npm start``` if you closed it). Load the metadata for the service and adjust the URL to point to the **V2** version. Save the content to a file locally. </br>![Save Metadata](images/save_metadata.png)
 
-10. Returning to the Yeoman UI wizard, you should be on the **Datasource and Service Selection** step now.  Choose **Upload a Metadata Document** and then enter or search for the path to your project and the metadata file you just uploaded in the previous step. Finally press **Next**. </br>![Datasource Selection](images/datasource_selection.png)
+10. Now upload that **metadata.xml** file you just saved to the root of your project</br>![Upload metadata](images/upload_metadata.png)
 
-11. Choose **POHeaders** as your Main Entity and **item** as your navigation entity. The wizard is reading the metadata document of your service to propose values and validate your input. Press **Next**. </br>![Entity Selection](images/entity_selection.png)
+11. Returning to the Yeoman UI wizard, you should be on the **Datasource and Service Selection** step now.  Choose **Upload a Metadata Document** and then enter or search for the path to your project and the metadata file you just uploaded in the previous step. Finally press **Next**. </br>![Datasource Selection](images/datasource_selection.png)
 
-12. Fill in the following values for the Project Attributes and press **Finish**. Please be sure to match the values closely. Otherwise the application the wizard generates will not match to the subsequent steps in this exercise. </br>![Project Attributes](images/project_attributes.png) </br> And a zoomed version of this same information:</br>![Project Attributes Zoomed](image/../images/project_attributes_bigger.png)
+12. Choose **POHeaders** as your Main Entity and **item** as your navigation entity. The wizard is reading the metadata document of your service to propose values and validate your input. Press **Next**. </br>![Entity Selection](images/entity_selection.png)
 
-13. You have a fully generated Fiori application in your **/app/resources** folder. The only change you need to make is open the **manifest.json** file and edit the **dataSources.mainService.uri**. The current value of **/here/goes/your/serviceurl/** needs to be changed to your actual service URL of **/v2/catalog**</br> ![Edit Manifest before](images/edit_manifest1.png)</br>![Edit Manifest After](images/edit_manifest2.png)
+13. Fill in the following values for the Project Attributes and press **Finish**. Please be sure to match the values closely. Otherwise the application the wizard generates will not match to the subsequent steps in this exercise. </br>![Project Attributes](images/project_attributes.png) </br> And a zoomed version of this same information:</br>![Project Attributes Zoomed](image/../images/project_attributes_bigger.png)
 
-14. Return to the **index.html** file in the **/app/resources** folder. Edit the **applications** section to add another tile for this newly generated application. </br>![Edit Launchpad](images/edit_launchpad_add_fiori_tile.png)
+14. You have a fully generated Fiori application in your **/app/resources** folder. The only change you need to make is open the **manifest.json** file and edit the **dataSources.mainService.uri**. The current value of **/here/goes/your/serviceurl/** needs to be changed to your actual service URL of **/v2/catalog**</br> ![Edit Manifest before](images/edit_manifest1.png)</br>![Edit Manifest After](images/edit_manifest2.png)
+
+15. Return to the **index.html** file in the **/app/resources** folder. Edit the **applications** section to add another tile for this newly generated application. </br>![Edit Launchpad](images/edit_launchpad_add_fiori_tile.png)
 
 ```JavaScript
         "po-fiori": {
