@@ -1,6 +1,6 @@
 # DAT160 - Cloud Native Development with SAP HANA
 
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-DEV160)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-DEV160)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-DAT160)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-DAT160)
 
 ## Description
 
