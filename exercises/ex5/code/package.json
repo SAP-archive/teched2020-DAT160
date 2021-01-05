@@ -6,34 +6,34 @@
     "license": "UNLICENSED",
     "private": true,
     "dependencies": {
-        "@sap/cds": "^4",
-        "express": "^4",
-        "@sap/hana-client": "^2.5",
-        "@sap/cds-odata-v2-adapter-proxy": "^1.4",
-        "@sap/hdbext": "^7.0.0",
-        "sap-hdbext-promisfied": "^2.202008.1"
+      "@sap/cds": "^4",
+      "express": "^4",
+      "@sap/hana-client": "^2.7",
+      "@sap/cds-odata-v2-adapter-proxy": "^1.5.1",
+      "@sap/hdbext": "^7.1.0",
+      "sap-hdbext-promisfied": "^2.202010.3"
     },
     "devDependencies": {
-        "sqlite3": "^4"
+      "@sap/ux-specification": "^1.84.0",
+      "sqlite3": "^5"
     },
     "scripts": {
-        "hana": "cds deploy --to hana:dat160 --auto-undeploy",
-        "start": "cds run",
-        "build": "cds build/all --clean"
+      "hana": "cds deploy --to hana:dat160 --auto-undeploy",
+      "start": "cds run",
+      "build": "cds build"
     },
     "cds": {
-        "preview": {
-            "ui5": {
-                "version": "1.80.2"
-            }
-        },
-        "hana": {
-            "deploy-format": "hdbtable"
-        },
-        "requires": {
-            "db": {
-                "kind": "hana"
-            }
+      "hana": {
+        "deploy-format": "hdbtable"
+      },
+      "requires": {
+        "db": {
+          "kind": "hana"
         }
-    }
-}
+      }
+    },
+    "sapux": [
+      "app/pofiori"
+    ]
+  }
+  
