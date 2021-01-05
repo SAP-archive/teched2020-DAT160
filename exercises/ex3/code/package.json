@@ -6,32 +6,28 @@
     "license": "UNLICENSED",
     "private": true,
     "dependencies": {
-        "@sap/cds": "^4",
-        "express": "^4",
-        "@sap/hana-client": "^2.5",
-        "@sap/cds-odata-v2-adapter-proxy": "^1.4"
+      "@sap/cds": "^4",
+      "express": "^4",
+      "@sap/hana-client": "^2.7",
+      "@sap/cds-odata-v2-adapter-proxy": "^1.5.1"
     },
     "devDependencies": {
-        "sqlite3": "^4"
+      "sqlite3": "^5"
     },
     "scripts": {
-        "hana": "cds deploy --to hana:dat160 --auto-undeploy",
-        "start": "cds run",
-        "build": "cds build/all --clean"
+      "hana": "cds deploy --to hana:dat160 --auto-undeploy",
+      "start": "cds run",
+      "build": "cds build"
     },
     "cds": {
-        "preview": {
-            "ui5": {
-                "version": "1.80.2"
-            }
-        },
-        "hana": {
-            "deploy-format": "hdbtable"
-        },
-        "requires": {
-            "db": {
-                "kind": "hana"
-            }
+      "hana": {
+        "deploy-format": "hdbtable"
+      },
+      "requires": {
+        "db": {
+          "kind": "hana"
         }
+      }
     }
-}
+  }
+  

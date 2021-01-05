@@ -35,7 +35,7 @@ Dev spaces are like isolated virtual machines in the cloud that can be quickly s
 
 4. Enter **HANA_DAT160** for your dev space name and choose **SAP Cloud Business Application** as the kind of application you are creating.</br>![Create Dev Space](images/create_dev_space.png)
 
-5. The Dev space will automatically be configured with the most common tools you need for the type of application you choose. However you can also choose additional, optional extensions.  For this workshop we would recommend also choosing **CDS Graphical Modeler**.</br>![Optional Tools](images/optional_tools.png)
+5. The Dev space will automatically be configured with the most common tools you need for the type of application you choose. However you can also choose additional, optional extensions.  For this workshop we would ask that you also choose **CDS Graphical Modeler**, **SAP HANA Calculation View Editor**, **SAP HANA Database Explorer**, **SAP HANA Tools**.</br>![Optional Tools](images/optional_tools.png)
 
 6. Once all selections are completed, press **Create Dev Space**</br>![Press Create Dev Space](images/press_create_dev_space.png)
 
