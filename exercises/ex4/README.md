@@ -358,27 +358,23 @@ After completing these steps you will have used the Fiori Tools to generate a fu
 
 1. Open the Command Pallet </br>![Open Command](images/open_command_pallet.png)
 
-2. Run the **Yeoman UI Generators** command.  This is the main tool in the Business Application Studio to provide visual, guided wizards. </br>![run Yeomen UI Generators](images/yeoman_ui.png)
+2. Run the **Expore and Install Generator** command.  This is the main tool in the Business Application Studio to provide visual, guided wizards. </br>![run Yeomen UI Generators](images/yeoman_ui.png)
 
-3. Because we are in the Dev Space for Cloud Application Programming Model, it doesn't contain all the Fiori tools. But we can add them. Choose **Explore and Install Generators...** </br>![Explorer and Install Generators](images/explorer_install_yeoman.png)
+3. Search for **fiori**. Choose the @sap/generator-fiori-elements and press **Install**.</br>![Install Fiori Elements](images/install_fiori_elements.png)
 
-4. Search for **fiori**. Choose the @sap/generator-fiori-elements and press **Install**.</br>![Install Fiori Elements](images/install_fiori_elements.png)
+4. After installation is complete, close the **Explore and Install Generators** tab and then run the command **Run Generator** from the Command Pallet to be able to use the newly installed generator. Choose **@sap/fiori-elements:app** from the list of generators.</br>![Run @sap/fiori-elements:app](images/run_fiori_generator.png)
 
-5. After installation is complete, close the **Yeoman UI** tab and then reload the **Yeoman UI Generators** via the Command Pallet to be able to use the newly installed generator.
+5. Choose **List Report Object Page** and press **Next**. </br>![List Report Object Page](images/list_report_object_page.png)
 
-6. Now you will see a new Generator for **SAP Fiori elements application**.  Choose that and press **Next**. </br>![Choose SAP Fiori elements application](images/choose_fiori_elements.png)
+6. Choose **Use a Local CAP Node.js Project** as the Data source.  Then browse and choose the folder path **/home/user/projects/dat160**. Finally select **CatalogService** from the drop down of the OData service.  Press **Next**. </br> ![New Feature](images/NewFeature.png)
 
-7. Choose **List Report Object Page** and press **Next**. </br>![List Report Object Page](images/list_report_object_page.png)
+7. Choose **POHeaders** as your Main Entity and **item** as your navigation entity. The wizard is reading the metadata document of your service to propose values and validate your input. Press **Next**. </br>![Entity Selection](images/entity_selection.png)
 
-8. Choose **Use a Local CAP Node.js Project** as the Data source.  Then browse and choose the folder path **/home/user/projects/dat160**. Finally select **CatalogService** from the drop down of the OData service.  Press **Next**. </br> ![New Feature](images/NewFeature.png)
+8. Fill in the following values for the Project Attributes and press **Finish**. Please be sure to match the values closely. Otherwise the application the wizard generates will not match to the subsequent steps in this exercise. </br>![Project Attributes](images/project_attributes.png) </br> And a zoomed version of this same information:</br>![Project Attributes Zoomed](image/../images/project_attributes_bigger.png)
 
-9. Choose **POHeaders** as your Main Entity and **item** as your navigation entity. The wizard is reading the metadata document of your service to propose values and validate your input. Press **Next**. </br>![Entity Selection](images/entity_selection.png)
+9. You have a fully generated Fiori application in your **/app/** folder. 
 
-13. Fill in the following values for the Project Attributes and press **Finish**. Please be sure to match the values closely. Otherwise the application the wizard generates will not match to the subsequent steps in this exercise. </br>![Project Attributes](images/project_attributes.png) </br> And a zoomed version of this same information:</br>![Project Attributes Zoomed](image/../images/project_attributes_bigger.png)
-
-14. You have a fully generated Fiori application in your **/app/** folder. 
-
-15. Return to the **index.html** file in the **/app/resources** folder. Edit the **applications** section to add another tile for this newly generated application. </br>![Edit Launchpad](images/edit_launchpad_add_fiori_tile.png)
+10. Return to the **index.html** file in the **/app/resources** folder. Edit the **applications** section to add another tile for this newly generated application. </br>![Edit Launchpad](images/edit_launchpad_add_fiori_tile.png)
 
 ```JavaScript
         "po-fiori": {
@@ -391,9 +387,9 @@ After completing these steps you will have used the Fiori Tools to generate a fu
 				},	 
 ```
 
-15. Save and refresh your Fiori Launchpad Sandbox. You should see the new tile. </br>![New Tile](images/new_tile.png)
+11. Save and refresh your Fiori Launchpad Sandbox. You should see the new tile. </br>![New Tile](images/new_tile.png)
 
-16. Click on it and you can explore your full Fiori Elements application </br>![Full Application](images/full_application.png)
+12. Click on it and you can explore your full Fiori Elements application </br>![Full Application](images/full_application.png)
 
 ## Summary
 
