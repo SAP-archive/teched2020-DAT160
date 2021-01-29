@@ -393,6 +393,6 @@ After completing these steps you will have used the Fiori Tools to generate a fu
 
 ## Summary
 
-You've now built a full stack Cloud Application Programming Model application with database model implemented in HANA Cloud, an OData service implementation and a Fiori Elements user interface.
+You've now built a full stack Cloud Application Programming Model application with database model implemented in SAP HANA Cloud, an OData service implementation and a Fiori Elements user interface.
 
 Continue to - [Exercise 5 - Function Implemented as Stored Procedure](../ex5/README.md)

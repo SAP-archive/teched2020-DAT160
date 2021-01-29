@@ -26,7 +26,7 @@ service CatalogService {
 }
 ```
 
-2. Save the file. Build the project using the command ```npm run build``` from the Terminal. Deploy to HANA database again because service definitions also create HANA views that need to exist within the database. Use the command ```npm run hana``` to deploy to HANA.  
+2. Save the file. Build the project using the command ```npm run build``` from the Terminal. Deploy to SAP HANA database again because service definitions also create SAP HANA views that need to exist within the database. Use the command ```npm run hana``` to deploy to SAP HANA.  
 
 3. Once the deployment to the database is complete, run ```npm start``` from the Terminal. This uses the start script from the package.json which is ```cds run```. This will run the service layer of our CAP application temporarily, directly from the Business Application Studio. This allows us to test and debug without ever having to deploy the application to Cloud Foundry or Kubernetes and saves considerable time. </br>![cds run](images/cds_run.png)
 

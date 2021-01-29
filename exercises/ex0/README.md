@@ -5,9 +5,9 @@ In this exercise, you will perform the basic setup to get a SAP Cloud Applicatio
 ## Is HANA running?
 
 [Video Link](https://www.youtube.com/watch?v=8rT-PEUg8Uw&t=20s)</br>
-In the [trial landscape](https://account.hanatrial.ondemand.com/) the HANA instance stops each night. Therefore the first thing we need to do is make sure your HANA instance is running.
+In the [trial landscape](https://account.hanatrial.ondemand.com/) the SAP HANA Cloud trial instance stops each night. Therefore the first thing we need to do is make sure your SAP HANA Cloud instance is running.
 
-1. From the SAP Cloud Platform entry page, click **Subaccounts** and then the tile for your Subaccount named **trial**
+1. From the SAP Business Technology Platform trial entry page, click **Subaccounts** and then the tile for your Subaccount named **trial**
 </br>![Subaccount](/exercises/ex0/images/subaccount.png)
 
 1. Then click on your **dev** space to navigate to the space level. </br>![Space select](/exercises/ex0/images/space_select.png)
@@ -27,11 +27,11 @@ In the [trial landscape](https://account.hanatrial.ondemand.com/) the HANA insta
 [Video Link](https://www.youtube.com/watch?v=8rT-PEUg8Uw&t=297s)</br>
 Dev spaces are like isolated virtual machines in the cloud that can be quickly spun-up. Each dev space type contains tailored tools and pre-installed run-times for a target scenario such as SAP Fiori or mobile development. This simplifies and saves time in setting up the development environment as there’s no need to install anything or upgrade; letting developers focus on their business domain, anytime, anywhere.
 
-1. Go to your SAP Cloud Platform subaccount and click the **Subscriptions** option.</br>![Subscriptions](images/01-01%20SCP%20Subscriptions_.jpg)
+1. Go to your SAP Business Technology Platform subaccount and click the **Subscriptions** option.</br>![Subscriptions](images/01-01%20SCP%20Subscriptions_.jpg)
 
 2. Locate the **SAP Business Application Studio** tile and click **Go to Application**</br>![Go To Application](images/go_to_application.png)
 
-3. Choose **Create Dev Space**. Please **NOTE**: In the SAP Cloud Platform trial you are limited to only two Dev Spaces and only one can be active at a time. If you have performed other workshops, you might already have reached your maximum. In that case you might have to delete one of the other dev spaces in order to continue with this workshop. </br>![Create Dev Space](images/AppStudio%20Dev%20Space%20Manager_.jpg)
+3. Choose **Create Dev Space**. Please **NOTE**: In the SAP Business Technology Platform trial you are limited to only two Dev Spaces and only one can be active at a time. If you have performed other workshops, you might already have reached your maximum. In that case you might have to delete one of the other dev spaces in order to continue with this workshop. </br>![Create Dev Space](images/AppStudio%20Dev%20Space%20Manager_.jpg)
 
 4. Enter **HANA_DAT160** for your dev space name and choose **SAP Cloud Business Application** as the kind of application you are creating.</br>![Create Dev Space](images/create_dev_space.png)
 
@@ -54,13 +54,13 @@ Before we create our SAP Cloud Application Programming Model project, we want to
 
 2. The command window will then open at the top of the Business Application Studio. The first input will prompt you for the API endpoint</br>![API Endpoint](images/api_endpoint.png)
 
-3. The default value proposed is likely the correct value, but if you need to confirm; the value can be found in the SAP Cloud Platform Cockpit at the Subaccount level </br>![Finding the API Endpoint](images/api_endpoint_from_subaccount.png)
+3. The default value proposed is likely the correct value, but if you need to confirm; the value can be found in the SAP Business Technology Platform cockpit at the Subaccount level </br>![Finding the API Endpoint](images/api_endpoint_from_subaccount.png)
 
-4. Press **Enter** to confirm your input of the API endpoint. The next input field will ask you for the email address you used to create your SAP Cloud Platform trial account </br>![Email](images/email.png)
+4. Press **Enter** to confirm your input of the API endpoint. The next input field will ask you for the email address you used to create your SAP Business Technology Platform trial account </br>![Email](images/email.png)
 
-5. The next input will ask you for your SAP Cloud Platform trial account password </br>![Password](images/password.png)
+5. The next input will ask you for your SAP Business Technology Platform trial account password </br>![Password](images/password.png)
 
-6. The next input will ask you for your Organization. In most situations you will have a single choice. But like the API endpoint earlier, if you need to confirm the correct value it will be displayed in the top navigation of the SAP Cloud Platform Cockpit </br>![Organization](images/organization.png)
+6. The next input will ask you for your Organization. In most situations you will have a single choice. But like the API endpoint earlier, if you need to confirm the correct value it will be displayed in the top navigation of the SAP Business Technology Platform cockpit </br>![Organization](images/organization.png)
 
 7. The final input will ask you for your Space. If you choose the endpoint API and Organization correctly, then you should have a single option of **dev** </br>![Space](images/space.png)
 
@@ -68,6 +68,6 @@ Before we create our SAP Cloud Application Programming Model project, we want to
 
 ## Summary
 
-Your HANA instance should be running and you've created a Dev Space and configured it for your needs in the Business Application Studio. You are now ready to begin development.
+Your SAP HANA instance should be running and you've created a Dev Space and configured it for your needs in the Business Application Studio. You are now ready to begin development.
 
 Continue to - [Exercise 1 - Create CAP Project](../ex1/README.md)

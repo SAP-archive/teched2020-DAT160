@@ -2,7 +2,7 @@
 
 [![code](https://flat.badgen.net/badge/code/available/green?icon=github)](./code/)
 
-In this exercise we will create a project from template, adjust it to work with the SAP HANA Cloud and then finally deploy the initial sample content to the SAP HANA Cloud. You can always access the SAP Cloud Platform Trail homepage from this link: [https://account.hanatrial.ondemand.com/](https://account.hanatrial.ondemand.com/)
+In this exercise we will create a project from template, adjust it to work with the SAP HANA Cloud and then finally deploy the initial sample content to the SAP HANA Cloud. You can always access the SAP Business Technology Platform trial homepage from this link: [https://account.hanatrial.ondemand.com/](https://account.hanatrial.ondemand.com/)
 
 ## Exercise 1.1 Create Project From Template
 
@@ -75,19 +75,19 @@ We can also do this from the graphical HANA Projects view as well. You can press
 ![Bind Container](images/bind_container.png)</br>
 If you've not run the ```npm run hana``` script then you can also create a new service instance and name it **dat160** Otherwise choose the service instance created by the script previous from the list.</br>
 ![Create Service Instance](images/create_new_service_instance.png)</br>
-Finally from the SAP HANA Projects view, you can press the deploy icon to start the deployment of content into the HANA Database.</br>
+Finally from the SAP HANA Projects view, you can press the deploy icon to start the deployment of content into the SAP HANA Database.</br>
 ![Deploy to HANA](images/deploy_to_hana.png)</br>
-You have the choice to either use the script from the console or the graphic tool to deploy to HANA but for the purposes of this workshop we will continue to use the scripts. 
+You have the choice to either use the script from the console or the graphic tool to deploy to SAP HANA but for the purposes of this workshop we will continue to use the scripts. 
 
-5. There will be a large log written out from this command. However the ending of the log should look something like this screenshot and it should reach the state **Done** without displaying an error.</br>![Results of HANA Deployment](images/hana_deploy_results.png)
+5. There will be a large log written out from this command. However the ending of the log should look something like this screenshot and it should reach the state **Done** without displaying an error.</br>![Results of SAP HANA Deployment](images/hana_deploy_results.png)
 
 6. Now we want to verify the content has been created and view it in the SAP HANA Cloud database.  We also have a sample code project that helps with HANA interaction from the terminal.  We can install that tool into our SAP Business Application Studio Dev Space this command from the terminal: ```npm install -g hana-cli```</br>![Install hana-cli](images/install_hana_cli.png)</br>Unlike the npm install we issued earlier, here we use the -g parameter. This installs the specified module globally instead of only for use in this particular project.
 
-7. The hana-cli tool we just installed uses a file named default-env.json or .env to read the connection parameters and credentials for working with the SAP HANA Cloud. This file is also used by many other SAP modules, libraries and concepts. In fact the cds deploy command we issued previously actually created this default-env.json file for us already and stored all the connection details for our SAP HANA Cloud trial system in it. Or if you use the graphical tool to deploy it created the .env file in teh **/gen/db** folder. We can use this file to connect to the HANA DB where we've already deployed our CAP project content. For instance you can use the command ```hana-cli systemInfo``` </br>![hana-cli systemInfo](images/hana_cli_systemInfo.png)
+7. The hana-cli tool we just installed uses a file named default-env.json or .env to read the connection parameters and credentials for working with the SAP HANA Cloud. This file is also used by many other SAP modules, libraries and concepts. In fact the cds deploy command we issued previously actually created this default-env.json file for us already and stored all the connection details for our SAP HANA Cloud trial system in it. Or if you use the graphical tool to deploy it created the .env file in teh **/gen/db** folder. We can use this file to connect to the SAP HANA DB where we've already deployed our CAP project content. For instance you can use the command ```hana-cli systemInfo``` </br>![hana-cli systemInfo](images/hana_cli_systemInfo.png)
 
 8. The default-env.json file also contains connection information to the specific HDI container that was created for the CAP project. If you issue the command ```hana-cli tables``` you should see the **MY_BOOKSHOP_BOOKS** table generated from the sample entity.</br>![hana-cli tables](images/hana_cli_tables.png)
 
-9.  For more extensive work with the SAP HANA Cloud database and the HDI container we want to use the Database Explorer. Issue the command ```hana-cli opendbx``` and get the URL for the Database Explorer connected to your SAP HANA Cloud trial instance. You can also return to the SAP Cloud Cockpit where we earlier check if your SAP HANA Cloud instance was running. From that same tile there is also a button to launch the Database Explorer.</br>![Open Database Explorer](images/open_db_explorer.png)
+9. For more extensive work with the SAP HANA Cloud database and the HDI container we want to use the Database Explorer. Issue the command ```hana-cli opendbx``` and get the URL for the Database Explorer connected to your SAP HANA Cloud trial instance. You can also return to the SAP Business Technology Platform cockpit where we earlier check if your SAP HANA Cloud instance was running. From that same tile there is also a button to launch the Database Explorer.</br>![Open Database Explorer](images/open_db_explorer.png)
 
 10. When the Database Explorer initially opens, the content is likely empty (unless you have done some work for another workshop or tutorial).  Press the **+** icon to create a new database connection.</br>![Initial DB Explorer](images/initial_db_explorer.png)
 

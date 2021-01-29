@@ -2,13 +2,13 @@
 
 [![code](https://flat.badgen.net/badge/code/available/green?icon=github)](./code/)
 
-In this exercise, we will create a service function which is implemented via a HANA SQLScript Stored Procedure.
+In this exercise, we will create a service function which is implemented via an SAP HANA SQLScript Stored Procedure.
 
 ## Exercise 5.1 Add Stored Procedure and Use it to Implement a CAP Function
 
 [Video Link](https://youtu.be/0gQ58BTtQ9Q)</br>
 
-1. In the **/db/src** folder create a new file named **sleep.hdbprocedure**. This is a very simple HANA Stored Procedure that calls the built-in SYNC library to put processing to sleep for 10 seconds. It's a nice tool to be able to test the impact of long running queries without actually putting unnecessary load on the system. </br>![sleep](images/sleep_procedure.png)
+1. In the **/db/src** folder create a new file named **sleep.hdbprocedure**. This is a very simple SAP HANA Stored Procedure that calls the built-in SYNC library to put processing to sleep for 10 seconds. It's a nice tool to be able to test the impact of long running queries without actually putting unnecessary load on the system. </br>![sleep](images/sleep_procedure.png)
 
 ```SQL
 PROCEDURE "sleep" ( )
@@ -24,7 +24,7 @@ END
 
 2. Save. Run ```npm run build``` from the terminal. Although this new stored procedure isn't part of CAP, the build will still copy it into the **/gen/db** folder. </br>![Build with Procedure](images/build_contains_procedure.png)
 
-3. Run ```npm run hana```.  Likewise the CDS deploy to HANA will also deploy native HANA artifacts as well. Not everything in your project has to be implemented via CAP. You can also mix in HANA native development as well.</br>![Deploy also works for HANA Native content](images/deploy_creates_procedure.png)
+3. Run ```npm run hana```.  Likewise the CDS deploy to HANA will also deploy native SAP HANA artifacts as well. Not everything in your project has to be implemented via CAP. You can also mix in HANA native development as well.</br>![Deploy also works for HANA Native content](images/deploy_creates_procedure.png)
 
 4. If you wish you can return to the Database Explorer. This new Procedure is there now and can be tested. <br>![View sleep in DB Explorer](images/test_sleep1.png)</br></br>![Test Run sleep](images/test_sleep2.png)
 
@@ -60,6 +60,6 @@ END
 
 ## Summary
 
-You've now added an OData function to your service layer which in turn is implemented as a HANA Stored Procedure
+You've now added an OData function to your service layer which in turn is implemented as an SAP HANA Stored Procedure
 
 All Done - Congratulations you've completed this course workshop
