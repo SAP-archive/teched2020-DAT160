@@ -13,7 +13,7 @@ After completing these steps you will have added Fiori annotations to our CAP ap
 
 ```cds
 using CatalogService as pos from './cat-service';
-
+using CatalogService.POItems from './po-item-fiori';
 
 annotate pos.POHeaders with @( // header-level annotations
     // ---------------------------------------------------------------------------
