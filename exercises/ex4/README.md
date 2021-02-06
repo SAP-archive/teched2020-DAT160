@@ -360,9 +360,9 @@ After completing these steps you will have used the Fiori Tools to generate a fu
 
 2. Run the **Expore and Install Generator** command.  This is the main tool in the Business Application Studio to provide visual, guided wizards. </br>![run Yeomen UI Generators](images/yeoman_ui.png)
 
-3. Search for **fiori**. Choose the @sap/generator-fiori-elements and press **Install**.</br>![Install Fiori Elements](images/install_fiori_elements.png)
+3. Search for **fiori**. Choose the @sap/generator-fiori and press **Install**.</br>![Install Fiori](images/install_fiori_elements.png)
 
-4. After installation is complete, close the **Explore and Install Generators** tab and then run the command **Run Generator** from the Command Pallet to be able to use the newly installed generator. Choose **@sap/fiori-elements:app** from the list of generators.</br>![Run @sap/fiori-elements:app](images/run_fiori_generator.png)
+4. After installation is complete, close the **Explore and Install Generators** tab and then run the command **Run Generator** from the Command Pallet to be able to use the newly installed generator. Choose **@sap/fiori:app** from the list of generators.</br>![Run @sap/fiori:app](images/run_fiori_generator.png)
 
 5. Choose **List Report Object Page** and press **Next**. </br>![List Report Object Page](images/list_report_object_page.png)
 
